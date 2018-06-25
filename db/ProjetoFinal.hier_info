@@ -1,0 +1,72 @@
+|MemoriaROM
+data[0] <= data_M[0].DB_MAX_OUTPUT_PORT_TYPE
+data[1] <= data_M[1].DB_MAX_OUTPUT_PORT_TYPE
+data[2] <= data_M[2].DB_MAX_OUTPUT_PORT_TYPE
+data[3] <= data_M[3].DB_MAX_OUTPUT_PORT_TYPE
+data[4] <= data_M[4].DB_MAX_OUTPUT_PORT_TYPE
+data[5] <= data_M[5].DB_MAX_OUTPUT_PORT_TYPE
+data[6] <= data_M[6].DB_MAX_OUTPUT_PORT_TYPE
+data[7] <= data_M[7].DB_MAX_OUTPUT_PORT_TYPE
+Address_N[0] => DecodificadorDeEndereco:inst.Address[0]
+Address_N[1] => DecodificadorDeEndereco:inst.Address[1]
+Address_N[2] => DecodificadorDeEndereco:inst.Address[2]
+Address_N[3] => DecodificadorDeEndereco:inst.Address[3]
+Address_N[4] => DecodificadorDeEndereco:inst.Address[4]
+
+
+|MemoriaROM|DecodificadorDeEndereco:inst
+linha[0] <= inst49.DB_MAX_OUTPUT_PORT_TYPE
+linha[1] <= inst48.DB_MAX_OUTPUT_PORT_TYPE
+linha[2] <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+linha[3] <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+linha[4] <= inst45.DB_MAX_OUTPUT_PORT_TYPE
+linha[5] <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+linha[6] <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+linha[7] <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+linha[8] <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+linha[9] <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+linha[10] <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+linha[11] <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+linha[12] <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+linha[13] <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+linha[14] <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+linha[15] <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+linha[16] <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+linha[17] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+linha[18] <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+linha[19] <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+linha[20] <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+linha[21] <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+linha[22] <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+linha[23] <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+linha[24] <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+linha[25] <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+linha[26] <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+linha[27] <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+linha[28] <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+linha[29] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+linha[30] <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+linha[31] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Address[0] => inst10.IN2
+Address[0] => inst3.IN0
+Address[0] => inst12.IN2
+Address[0] => inst14.IN2
+Address[0] => inst16.IN2
+Address[1] => inst10.IN1
+Address[1] => inst11.IN1
+Address[1] => inst2.IN0
+Address[1] => inst14.IN1
+Address[1] => inst15.IN1
+Address[2] => inst10.IN0
+Address[2] => inst11.IN0
+Address[2] => inst12.IN0
+Address[2] => inst13.IN0
+Address[2] => inst4.IN0
+Address[3] => inst6.IN1
+Address[3] => inst1.IN0
+Address[3] => inst8.IN1
+Address[4] => inst6.IN0
+Address[4] => inst7.IN0
+Address[4] => inst50.IN0
+
+
