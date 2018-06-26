@@ -1,0 +1,229 @@
+Simulator report for Parte5
+Tue Jun 26 16:17:08 2018
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.6 us       ;
+; Simulation Netlist Size     ; 68 nodes     ;
+; Simulation Coverage         ;      98.53 % ;
+; Total Number of Transitions ; 860          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                                                           ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                                                         ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                                                      ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                                                            ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                                                             ;               ;
+; Vector input source                                                                        ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Parte5/output_files/DIsplay5bits.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                                                              ; On            ;
+; Check outputs                                                                              ; Off                                                                                                             ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                                                              ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                                                              ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                                                              ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                                                              ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                                                             ; Off           ;
+; Detect glitches                                                                            ; Off                                                                                                             ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                                                             ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                                                             ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                                             ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                                                             ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                                              ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                                                      ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                                             ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                                             ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                                            ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 32-bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      98.53 % ;
+; Total nodes checked                                 ; 68           ;
+; Total output ports checked                          ; 68           ;
+; Total output ports with complete 1/0-value coverage ; 67           ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 1            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                    ;
++----------------------+----------------------+------------------+
+; Node Name            ; Output Port Name     ; Output Port Type ;
++----------------------+----------------------+------------------+
+; |Display5bits|OUT[7] ; |Display5bits|OUT[7] ; pin_out          ;
+; |Display5bits|OUT[6] ; |Display5bits|OUT[6] ; pin_out          ;
+; |Display5bits|OUT[5] ; |Display5bits|OUT[5] ; pin_out          ;
+; |Display5bits|OUT[4] ; |Display5bits|OUT[4] ; pin_out          ;
+; |Display5bits|OUT[3] ; |Display5bits|OUT[3] ; pin_out          ;
+; |Display5bits|OUT[2] ; |Display5bits|OUT[2] ; pin_out          ;
+; |Display5bits|OUT[1] ; |Display5bits|OUT[1] ; pin_out          ;
+; |Display5bits|OUT[0] ; |Display5bits|OUT[0] ; pin_out          ;
+; |Display5bits|inst2  ; |Display5bits|inst2  ; out0             ;
+; |Display5bits|inst   ; |Display5bits|inst   ; out0             ;
+; |Display5bits|IN[3]  ; |Display5bits|IN[3]  ; out              ;
+; |Display5bits|IN[2]  ; |Display5bits|IN[2]  ; out              ;
+; |Display5bits|IN[1]  ; |Display5bits|IN[1]  ; out              ;
+; |Display5bits|IN[0]  ; |Display5bits|IN[0]  ; out              ;
+; |Display5bits|inst22 ; |Display5bits|inst22 ; out0             ;
+; |Display5bits|inst20 ; |Display5bits|inst20 ; out0             ;
+; |Display5bits|inst19 ; |Display5bits|inst19 ; out0             ;
+; |Display5bits|inst21 ; |Display5bits|inst21 ; out0             ;
+; |Display5bits|inst10 ; |Display5bits|inst10 ; out0             ;
+; |Display5bits|inst9  ; |Display5bits|inst9  ; out0             ;
+; |Display5bits|inst18 ; |Display5bits|inst18 ; out0             ;
+; |Display5bits|inst17 ; |Display5bits|inst17 ; out0             ;
+; |Display5bits|inst11 ; |Display5bits|inst11 ; out0             ;
+; |Display5bits|inst32 ; |Display5bits|inst32 ; out0             ;
+; |Display5bits|inst26 ; |Display5bits|inst26 ; out0             ;
+; |Display5bits|inst25 ; |Display5bits|inst25 ; out0             ;
+; |Display5bits|inst28 ; |Display5bits|inst28 ; out0             ;
+; |Display5bits|inst27 ; |Display5bits|inst27 ; out0             ;
+; |Display5bits|inst29 ; |Display5bits|inst29 ; out0             ;
+; |Display5bits|inst30 ; |Display5bits|inst30 ; out0             ;
+; |Display5bits|inst31 ; |Display5bits|inst31 ; out0             ;
+; |Display5bits|inst23 ; |Display5bits|inst23 ; out0             ;
+; |Display5bits|inst41 ; |Display5bits|inst41 ; out0             ;
+; |Display5bits|inst38 ; |Display5bits|inst38 ; out0             ;
+; |Display5bits|inst39 ; |Display5bits|inst39 ; out0             ;
+; |Display5bits|inst40 ; |Display5bits|inst40 ; out0             ;
+; |Display5bits|inst35 ; |Display5bits|inst35 ; out0             ;
+; |Display5bits|inst70 ; |Display5bits|inst70 ; out0             ;
+; |Display5bits|inst36 ; |Display5bits|inst36 ; out0             ;
+; |Display5bits|inst37 ; |Display5bits|inst37 ; out0             ;
+; |Display5bits|inst52 ; |Display5bits|inst52 ; out0             ;
+; |Display5bits|inst46 ; |Display5bits|inst46 ; out0             ;
+; |Display5bits|inst49 ; |Display5bits|inst49 ; out0             ;
+; |Display5bits|inst48 ; |Display5bits|inst48 ; out0             ;
+; |Display5bits|inst47 ; |Display5bits|inst47 ; out0             ;
+; |Display5bits|inst51 ; |Display5bits|inst51 ; out0             ;
+; |Display5bits|inst42 ; |Display5bits|inst42 ; out0             ;
+; |Display5bits|inst45 ; |Display5bits|inst45 ; out0             ;
+; |Display5bits|inst43 ; |Display5bits|inst43 ; out0             ;
+; |Display5bits|inst44 ; |Display5bits|inst44 ; out0             ;
+; |Display5bits|inst53 ; |Display5bits|inst53 ; out0             ;
+; |Display5bits|inst56 ; |Display5bits|inst56 ; out0             ;
+; |Display5bits|inst55 ; |Display5bits|inst55 ; out0             ;
+; |Display5bits|inst57 ; |Display5bits|inst57 ; out0             ;
+; |Display5bits|inst54 ; |Display5bits|inst54 ; out0             ;
+; |Display5bits|inst58 ; |Display5bits|inst58 ; out0             ;
+; |Display5bits|inst60 ; |Display5bits|inst60 ; out0             ;
+; |Display5bits|inst62 ; |Display5bits|inst62 ; out0             ;
+; |Display5bits|inst64 ; |Display5bits|inst64 ; out0             ;
+; |Display5bits|inst63 ; |Display5bits|inst63 ; out0             ;
+; |Display5bits|inst59 ; |Display5bits|inst59 ; out0             ;
+; |Display5bits|inst61 ; |Display5bits|inst61 ; out0             ;
+; |Display5bits|inst69 ; |Display5bits|inst69 ; out0             ;
+; |Display5bits|inst66 ; |Display5bits|inst66 ; out0             ;
+; |Display5bits|inst67 ; |Display5bits|inst67 ; out0             ;
+; |Display5bits|inst68 ; |Display5bits|inst68 ; out0             ;
+; |Display5bits|inst65 ; |Display5bits|inst65 ; out0             ;
++----------------------+----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------+
+; Missing 0-Value Coverage                                     ;
++---------------------+---------------------+------------------+
+; Node Name           ; Output Port Name    ; Output Port Type ;
++---------------------+---------------------+------------------+
+; |Display5bits|IN[4] ; |Display5bits|IN[4] ; out              ;
++---------------------+---------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Jun 26 16:17:07 2018
+Info: Command: quartus_sim --simulation_results_format=VWF Parte5 -c Parte5
+Info (324025): Using vector source file "/net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Parte5/output_files/DIsplay5bits.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      98.53 %
+Info (328052): Number of transitions in simulation is 860
+Info (324045): Vector file Parte5.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 32-bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 278 megabytes
+    Info: Processing ended: Tue Jun 26 16:17:08 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
