@@ -1,0 +1,88 @@
+|Placa
+LEDR[5] <= S[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= S[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= S[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= S[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[9] <= S[4].DB_MAX_OUTPUT_PORT_TYPE
+SW[4] => PC:inst.ENABLE
+SW[5] => PC:inst.IN[0]
+SW[6] => PC:inst.IN[1]
+SW[7] => PC:inst.IN[2]
+SW[8] => PC:inst.IN[3]
+SW[9] => PC:inst.IN[4]
+KEY[1] => PC:inst.LOAD_N
+KEY[2] => PC:inst.RESET_N
+KEY[3] => PC:inst.CLK
+
+
+|Placa|PC:inst
+OUT[0] <= S[0].DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= S[1].DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= S[2].DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= S[3].DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= S[4].DB_MAX_OUTPUT_PORT_TYPE
+RESET_N => inst10.IN0
+RESET_N => Contador3Bits:inst.RESET_N
+RESET_N => inst5.IN0
+ENABLE => Contador3Bits:inst.ENABLE
+ENABLE => inst4.IN1
+LOAD_N => Contador3Bits:inst.LOAD_N
+LOAD_N => inst11.IN0
+LOAD_N => Contador3Bits:inst1.LOAD_N
+IN[0] => Contador3Bits:inst.DC
+IN[1] => Contador3Bits:inst.DB
+IN[2] => Contador3Bits:inst.DA
+IN[3] => Contador3Bits:inst1.DC
+IN[4] => Contador3Bits:inst1.DB
+CLK => Contador3Bits:inst.CLK
+CLK => Contador3Bits:inst1.CLK
+
+
+|Placa|PC:inst|Contador3Bits:inst1
+RCO <= inst101.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst2.CLK
+CLK => inst4.CLK
+CLK => inst3.CLK
+ENABLE => inst31.IN0
+ENABLE => inst98.IN1
+ENABLE => inst24.IN1
+ENABLE => inst26.IN1
+DA => inst20.IN0
+LOAD_N => A1.IN0
+LOAD_N => inst11.IN1
+LOAD_N => inst15.IN1
+LOAD_N => inst19.IN1
+DC => inst12.IN0
+RESET_N => inst99.IN1
+RESET_N => inst18.IN1
+RESET_N => inst22.IN1
+DB => inst16.IN0
+QA <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+QB <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+QC <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placa|PC:inst|Contador3Bits:inst
+RCO <= inst101.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst2.CLK
+CLK => inst4.CLK
+CLK => inst3.CLK
+ENABLE => inst31.IN0
+ENABLE => inst98.IN1
+ENABLE => inst24.IN1
+ENABLE => inst26.IN1
+DA => inst20.IN0
+LOAD_N => A1.IN0
+LOAD_N => inst11.IN1
+LOAD_N => inst15.IN1
+LOAD_N => inst19.IN1
+DC => inst12.IN0
+RESET_N => inst99.IN1
+RESET_N => inst18.IN1
+RESET_N => inst22.IN1
+DB => inst16.IN0
+QA <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+QB <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+QC <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
