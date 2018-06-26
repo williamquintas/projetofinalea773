@@ -1,0 +1,245 @@
+|ULA
+C <= Soma:inst2.C
+f[0] => Decodificador:inst3.f0
+f[1] => Decodificador:inst3.f1
+f[2] => Decodificador:inst3.f2
+x[0] => Complementa:inst.IN[0]
+x[1] => Complementa:inst.IN[1]
+x[2] => Complementa:inst.IN[2]
+x[3] => Complementa:inst.IN[3]
+x[4] => Complementa:inst.IN[4]
+y[0] => Complementa:inst1.IN[0]
+y[1] => Complementa:inst1.IN[1]
+y[2] => Complementa:inst1.IN[2]
+y[3] => Complementa:inst1.IN[3]
+y[4] => Complementa:inst1.IN[4]
+Z <= Soma:inst2.Z
+N <= Soma:inst2.N
+V <= Soma:inst2.V
+OUT[0] <= Soma:inst2.OUT[0]
+OUT[1] <= Soma:inst2.OUT[1]
+OUT[2] <= Soma:inst2.OUT[2]
+OUT[3] <= Soma:inst2.OUT[3]
+OUT[4] <= Soma:inst2.OUT[4]
+
+
+|ULA|Soma:inst2
+C <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+Cin => SomadorCompleto:inst.Cin
+x[0] => SomadorCompleto:inst.X
+x[1] => SomadorCompleto:inst4.X
+x[2] => SomadorCompleto:inst5.X
+x[3] => SomadorCompleto:inst13.X
+x[4] => SomadorCompleto:inst6.X
+x[4] => inst11.IN0
+x[4] => inst7.IN2
+y[0] => SomadorCompleto:inst.Y
+y[1] => SomadorCompleto:inst4.Y
+y[2] => SomadorCompleto:inst5.Y
+y[3] => SomadorCompleto:inst13.Y
+y[4] => SomadorCompleto:inst6.Y
+y[4] => inst10.IN0
+y[4] => inst7.IN1
+Z <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+N <= S[4].DB_MAX_OUTPUT_PORT_TYPE
+V <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+OUT[0] <= S[0].DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= S[1].DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= S[2].DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= S[3].DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= S[4].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Soma:inst2|SomadorCompleto:inst6
+S <= MeioSomador:inst.S
+Cin => MeioSomador:inst.A
+X => MeioSomador:inst1.A
+Y => MeioSomador:inst1.B
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Soma:inst2|SomadorCompleto:inst6|MeioSomador:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN1
+B => inst.IN1
+B => inst1.IN0
+Cout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Soma:inst2|SomadorCompleto:inst6|MeioSomador:inst1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN1
+B => inst.IN1
+B => inst1.IN0
+Cout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Soma:inst2|SomadorCompleto:inst13
+S <= MeioSomador:inst.S
+Cin => MeioSomador:inst.A
+X => MeioSomador:inst1.A
+Y => MeioSomador:inst1.B
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Soma:inst2|SomadorCompleto:inst13|MeioSomador:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN1
+B => inst.IN1
+B => inst1.IN0
+Cout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Soma:inst2|SomadorCompleto:inst13|MeioSomador:inst1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN1
+B => inst.IN1
+B => inst1.IN0
+Cout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Soma:inst2|SomadorCompleto:inst5
+S <= MeioSomador:inst.S
+Cin => MeioSomador:inst.A
+X => MeioSomador:inst1.A
+Y => MeioSomador:inst1.B
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Soma:inst2|SomadorCompleto:inst5|MeioSomador:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN1
+B => inst.IN1
+B => inst1.IN0
+Cout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Soma:inst2|SomadorCompleto:inst5|MeioSomador:inst1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN1
+B => inst.IN1
+B => inst1.IN0
+Cout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Soma:inst2|SomadorCompleto:inst4
+S <= MeioSomador:inst.S
+Cin => MeioSomador:inst.A
+X => MeioSomador:inst1.A
+Y => MeioSomador:inst1.B
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Soma:inst2|SomadorCompleto:inst4|MeioSomador:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN1
+B => inst.IN1
+B => inst1.IN0
+Cout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Soma:inst2|SomadorCompleto:inst4|MeioSomador:inst1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN1
+B => inst.IN1
+B => inst1.IN0
+Cout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Soma:inst2|SomadorCompleto:inst
+S <= MeioSomador:inst.S
+Cin => MeioSomador:inst.A
+X => MeioSomador:inst1.A
+Y => MeioSomador:inst1.B
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Soma:inst2|SomadorCompleto:inst|MeioSomador:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN1
+B => inst.IN1
+B => inst1.IN0
+Cout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Soma:inst2|SomadorCompleto:inst|MeioSomador:inst1
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst1.IN1
+B => inst.IN1
+B => inst1.IN0
+Cout <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA|Decodificador:inst3
+Cx <= f1.DB_MAX_OUTPUT_PORT_TYPE
+f1 => Cx.DATAIN
+f1 => inst.IN0
+f1 => Zy.DATAIN
+Cy <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+f0 => inst2.IN1
+f0 => Carry.DATAIN
+Zy <= f1.DB_MAX_OUTPUT_PORT_TYPE
+Carry <= f0.DB_MAX_OUTPUT_PORT_TYPE
+f2 => ~NO_FANOUT~
+
+
+|ULA|Complementa:inst
+OUT[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+C => inst.IN0
+C => inst1.IN0
+C => inst2.IN0
+C => inst3.IN0
+C => inst4.IN0
+IN[0] => inst4.IN1
+IN[1] => inst3.IN1
+IN[2] => inst2.IN1
+IN[3] => inst1.IN1
+IN[4] => inst.IN1
+
+
+|ULA|Zera:inst5
+OUT[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Z => inst99.IN0
+IN[0] => inst4.IN1
+IN[1] => inst3.IN1
+IN[2] => inst2.IN1
+IN[3] => inst1.IN1
+IN[4] => inst.IN1
+
+
+|ULA|Complementa:inst1
+OUT[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+C => inst.IN0
+C => inst1.IN0
+C => inst2.IN0
+C => inst3.IN0
+C => inst4.IN0
+IN[0] => inst4.IN1
+IN[1] => inst3.IN1
+IN[2] => inst2.IN1
+IN[3] => inst1.IN1
+IN[4] => inst.IN1
+
+
