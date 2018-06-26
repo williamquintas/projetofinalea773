@@ -1,0 +1,2648 @@
+|Placa
+LEDR[0] <= LED[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= LED[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= LED[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= LED[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= LED[4].DB_MAX_OUTPUT_PORT_TYPE
+KEY[3] => inst7.IN0
+SW[0] => MemoriaRAM:inst.R/W
+SW[1] => MemoriaRAM:inst.IN[4]
+SW[2] => MemoriaRAM:inst.IN[0]
+SW[3] => MemoriaRAM:inst.IN[1]
+SW[4] => MemoriaRAM:inst.IN[2]
+SW[5] => MemoriaRAM:inst.IN[3]
+SW[6] => MemoriaRAM:inst.Endereco[0]
+SW[7] => MemoriaRAM:inst.Endereco[1]
+SW[8] => MemoriaRAM:inst.Endereco[2]
+SW[9] => MemoriaRAM:inst.Endereco[3]
+
+
+|Placa|MemoriaRAM:inst
+OUT[0] <= OUT.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= OUT.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= OUT.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= OUT.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= OUT.DB_MAX_OUTPUT_PORT_TYPE
+CLK => LinhaDeRAM:inst.CLK
+CLK => LinhaDeRAM:inst30.CLK
+CLK => LinhaDeRAM:inst38.CLK
+CLK => LinhaDeRAM:inst46.CLK
+CLK => LinhaDeRAM:inst23.CLK
+CLK => LinhaDeRAM:inst31.CLK
+CLK => LinhaDeRAM:inst39.CLK
+CLK => LinhaDeRAM:inst47.CLK
+CLK => LinhaDeRAM:inst24.CLK
+CLK => LinhaDeRAM:inst32.CLK
+CLK => LinhaDeRAM:inst40.CLK
+CLK => LinhaDeRAM:inst48.CLK
+CLK => LinhaDeRAM:inst25.CLK
+CLK => LinhaDeRAM:inst33.CLK
+CLK => LinhaDeRAM:inst41.CLK
+CLK => LinhaDeRAM:inst49.CLK
+CLK => LinhaDeRAM:inst26.CLK
+CLK => LinhaDeRAM:inst34.CLK
+CLK => LinhaDeRAM:inst42.CLK
+CLK => LinhaDeRAM:inst50.CLK
+CLK => LinhaDeRAM:inst27.CLK
+CLK => LinhaDeRAM:inst35.CLK
+CLK => LinhaDeRAM:inst43.CLK
+CLK => LinhaDeRAM:inst51.CLK
+CLK => LinhaDeRAM:inst28.CLK
+CLK => LinhaDeRAM:inst36.CLK
+CLK => LinhaDeRAM:inst44.CLK
+CLK => LinhaDeRAM:inst52.CLK
+CLK => LinhaDeRAM:inst29.CLK
+CLK => LinhaDeRAM:inst37.CLK
+CLK => LinhaDeRAM:inst45.CLK
+CLK => LinhaDeRAM:inst53.CLK
+R/W => LinhaDeRAM:inst.R/W
+R/W => LinhaDeRAM:inst30.R/W
+R/W => LinhaDeRAM:inst38.R/W
+R/W => LinhaDeRAM:inst46.R/W
+R/W => LinhaDeRAM:inst23.R/W
+R/W => LinhaDeRAM:inst31.R/W
+R/W => LinhaDeRAM:inst39.R/W
+R/W => LinhaDeRAM:inst47.R/W
+R/W => LinhaDeRAM:inst24.R/W
+R/W => LinhaDeRAM:inst32.R/W
+R/W => LinhaDeRAM:inst40.R/W
+R/W => LinhaDeRAM:inst48.R/W
+R/W => LinhaDeRAM:inst25.R/W
+R/W => LinhaDeRAM:inst33.R/W
+R/W => LinhaDeRAM:inst41.R/W
+R/W => LinhaDeRAM:inst49.R/W
+R/W => LinhaDeRAM:inst26.R/W
+R/W => LinhaDeRAM:inst34.R/W
+R/W => LinhaDeRAM:inst42.R/W
+R/W => LinhaDeRAM:inst50.R/W
+R/W => LinhaDeRAM:inst27.R/W
+R/W => LinhaDeRAM:inst35.R/W
+R/W => LinhaDeRAM:inst43.R/W
+R/W => LinhaDeRAM:inst51.R/W
+R/W => LinhaDeRAM:inst28.R/W
+R/W => LinhaDeRAM:inst36.R/W
+R/W => LinhaDeRAM:inst44.R/W
+R/W => LinhaDeRAM:inst52.R/W
+R/W => LinhaDeRAM:inst29.R/W
+R/W => LinhaDeRAM:inst37.R/W
+R/W => LinhaDeRAM:inst45.R/W
+R/W => LinhaDeRAM:inst53.R/W
+Endereco[0] => DecodificadorDeEndereco:inst21.Address[0]
+Endereco[1] => DecodificadorDeEndereco:inst21.Address[1]
+Endereco[2] => DecodificadorDeEndereco:inst21.Address[2]
+Endereco[3] => DecodificadorDeEndereco:inst21.Address[3]
+Endereco[4] => DecodificadorDeEndereco:inst21.Address[4]
+IN[0] => LinhaDeRAM:inst.in[0]
+IN[0] => LinhaDeRAM:inst30.in[0]
+IN[0] => LinhaDeRAM:inst38.in[0]
+IN[0] => LinhaDeRAM:inst46.in[0]
+IN[0] => LinhaDeRAM:inst23.in[0]
+IN[0] => LinhaDeRAM:inst31.in[0]
+IN[0] => LinhaDeRAM:inst39.in[0]
+IN[0] => LinhaDeRAM:inst47.in[0]
+IN[0] => LinhaDeRAM:inst24.in[0]
+IN[0] => LinhaDeRAM:inst32.in[0]
+IN[0] => LinhaDeRAM:inst40.in[0]
+IN[0] => LinhaDeRAM:inst48.in[0]
+IN[0] => LinhaDeRAM:inst25.in[0]
+IN[0] => LinhaDeRAM:inst33.in[0]
+IN[0] => LinhaDeRAM:inst41.in[0]
+IN[0] => LinhaDeRAM:inst49.in[0]
+IN[0] => LinhaDeRAM:inst26.in[0]
+IN[0] => LinhaDeRAM:inst34.in[0]
+IN[0] => LinhaDeRAM:inst42.in[0]
+IN[0] => LinhaDeRAM:inst50.in[0]
+IN[0] => LinhaDeRAM:inst27.in[0]
+IN[0] => LinhaDeRAM:inst35.in[0]
+IN[0] => LinhaDeRAM:inst43.in[0]
+IN[0] => LinhaDeRAM:inst51.in[0]
+IN[0] => LinhaDeRAM:inst28.in[0]
+IN[0] => LinhaDeRAM:inst36.in[0]
+IN[0] => LinhaDeRAM:inst44.in[0]
+IN[0] => LinhaDeRAM:inst52.in[0]
+IN[0] => LinhaDeRAM:inst29.in[0]
+IN[0] => LinhaDeRAM:inst37.in[0]
+IN[0] => LinhaDeRAM:inst45.in[0]
+IN[0] => LinhaDeRAM:inst53.in[0]
+IN[1] => LinhaDeRAM:inst.in[1]
+IN[1] => LinhaDeRAM:inst30.in[1]
+IN[1] => LinhaDeRAM:inst38.in[1]
+IN[1] => LinhaDeRAM:inst46.in[1]
+IN[1] => LinhaDeRAM:inst23.in[1]
+IN[1] => LinhaDeRAM:inst31.in[1]
+IN[1] => LinhaDeRAM:inst39.in[1]
+IN[1] => LinhaDeRAM:inst47.in[1]
+IN[1] => LinhaDeRAM:inst24.in[1]
+IN[1] => LinhaDeRAM:inst32.in[1]
+IN[1] => LinhaDeRAM:inst40.in[1]
+IN[1] => LinhaDeRAM:inst48.in[1]
+IN[1] => LinhaDeRAM:inst25.in[1]
+IN[1] => LinhaDeRAM:inst33.in[1]
+IN[1] => LinhaDeRAM:inst41.in[1]
+IN[1] => LinhaDeRAM:inst49.in[1]
+IN[1] => LinhaDeRAM:inst26.in[1]
+IN[1] => LinhaDeRAM:inst34.in[1]
+IN[1] => LinhaDeRAM:inst42.in[1]
+IN[1] => LinhaDeRAM:inst50.in[1]
+IN[1] => LinhaDeRAM:inst27.in[1]
+IN[1] => LinhaDeRAM:inst35.in[1]
+IN[1] => LinhaDeRAM:inst43.in[1]
+IN[1] => LinhaDeRAM:inst51.in[1]
+IN[1] => LinhaDeRAM:inst28.in[1]
+IN[1] => LinhaDeRAM:inst36.in[1]
+IN[1] => LinhaDeRAM:inst44.in[1]
+IN[1] => LinhaDeRAM:inst52.in[1]
+IN[1] => LinhaDeRAM:inst29.in[1]
+IN[1] => LinhaDeRAM:inst37.in[1]
+IN[1] => LinhaDeRAM:inst45.in[1]
+IN[1] => LinhaDeRAM:inst53.in[1]
+IN[2] => LinhaDeRAM:inst.in[2]
+IN[2] => LinhaDeRAM:inst30.in[2]
+IN[2] => LinhaDeRAM:inst38.in[2]
+IN[2] => LinhaDeRAM:inst46.in[2]
+IN[2] => LinhaDeRAM:inst23.in[2]
+IN[2] => LinhaDeRAM:inst31.in[2]
+IN[2] => LinhaDeRAM:inst39.in[2]
+IN[2] => LinhaDeRAM:inst47.in[2]
+IN[2] => LinhaDeRAM:inst24.in[2]
+IN[2] => LinhaDeRAM:inst32.in[2]
+IN[2] => LinhaDeRAM:inst40.in[2]
+IN[2] => LinhaDeRAM:inst48.in[2]
+IN[2] => LinhaDeRAM:inst25.in[2]
+IN[2] => LinhaDeRAM:inst33.in[2]
+IN[2] => LinhaDeRAM:inst41.in[2]
+IN[2] => LinhaDeRAM:inst49.in[2]
+IN[2] => LinhaDeRAM:inst26.in[2]
+IN[2] => LinhaDeRAM:inst34.in[2]
+IN[2] => LinhaDeRAM:inst42.in[2]
+IN[2] => LinhaDeRAM:inst50.in[2]
+IN[2] => LinhaDeRAM:inst27.in[2]
+IN[2] => LinhaDeRAM:inst35.in[2]
+IN[2] => LinhaDeRAM:inst43.in[2]
+IN[2] => LinhaDeRAM:inst51.in[2]
+IN[2] => LinhaDeRAM:inst28.in[2]
+IN[2] => LinhaDeRAM:inst36.in[2]
+IN[2] => LinhaDeRAM:inst44.in[2]
+IN[2] => LinhaDeRAM:inst52.in[2]
+IN[2] => LinhaDeRAM:inst29.in[2]
+IN[2] => LinhaDeRAM:inst37.in[2]
+IN[2] => LinhaDeRAM:inst45.in[2]
+IN[2] => LinhaDeRAM:inst53.in[2]
+IN[3] => LinhaDeRAM:inst.in[3]
+IN[3] => LinhaDeRAM:inst30.in[3]
+IN[3] => LinhaDeRAM:inst38.in[3]
+IN[3] => LinhaDeRAM:inst46.in[3]
+IN[3] => LinhaDeRAM:inst23.in[3]
+IN[3] => LinhaDeRAM:inst31.in[3]
+IN[3] => LinhaDeRAM:inst39.in[3]
+IN[3] => LinhaDeRAM:inst47.in[3]
+IN[3] => LinhaDeRAM:inst24.in[3]
+IN[3] => LinhaDeRAM:inst32.in[3]
+IN[3] => LinhaDeRAM:inst40.in[3]
+IN[3] => LinhaDeRAM:inst48.in[3]
+IN[3] => LinhaDeRAM:inst25.in[3]
+IN[3] => LinhaDeRAM:inst33.in[3]
+IN[3] => LinhaDeRAM:inst41.in[3]
+IN[3] => LinhaDeRAM:inst49.in[3]
+IN[3] => LinhaDeRAM:inst26.in[3]
+IN[3] => LinhaDeRAM:inst34.in[3]
+IN[3] => LinhaDeRAM:inst42.in[3]
+IN[3] => LinhaDeRAM:inst50.in[3]
+IN[3] => LinhaDeRAM:inst27.in[3]
+IN[3] => LinhaDeRAM:inst35.in[3]
+IN[3] => LinhaDeRAM:inst43.in[3]
+IN[3] => LinhaDeRAM:inst51.in[3]
+IN[3] => LinhaDeRAM:inst28.in[3]
+IN[3] => LinhaDeRAM:inst36.in[3]
+IN[3] => LinhaDeRAM:inst44.in[3]
+IN[3] => LinhaDeRAM:inst52.in[3]
+IN[3] => LinhaDeRAM:inst29.in[3]
+IN[3] => LinhaDeRAM:inst37.in[3]
+IN[3] => LinhaDeRAM:inst45.in[3]
+IN[3] => LinhaDeRAM:inst53.in[3]
+IN[4] => LinhaDeRAM:inst.in[4]
+IN[4] => LinhaDeRAM:inst30.in[4]
+IN[4] => LinhaDeRAM:inst38.in[4]
+IN[4] => LinhaDeRAM:inst46.in[4]
+IN[4] => LinhaDeRAM:inst23.in[4]
+IN[4] => LinhaDeRAM:inst31.in[4]
+IN[4] => LinhaDeRAM:inst39.in[4]
+IN[4] => LinhaDeRAM:inst47.in[4]
+IN[4] => LinhaDeRAM:inst24.in[4]
+IN[4] => LinhaDeRAM:inst32.in[4]
+IN[4] => LinhaDeRAM:inst40.in[4]
+IN[4] => LinhaDeRAM:inst48.in[4]
+IN[4] => LinhaDeRAM:inst25.in[4]
+IN[4] => LinhaDeRAM:inst33.in[4]
+IN[4] => LinhaDeRAM:inst41.in[4]
+IN[4] => LinhaDeRAM:inst49.in[4]
+IN[4] => LinhaDeRAM:inst26.in[4]
+IN[4] => LinhaDeRAM:inst34.in[4]
+IN[4] => LinhaDeRAM:inst42.in[4]
+IN[4] => LinhaDeRAM:inst50.in[4]
+IN[4] => LinhaDeRAM:inst27.in[4]
+IN[4] => LinhaDeRAM:inst35.in[4]
+IN[4] => LinhaDeRAM:inst43.in[4]
+IN[4] => LinhaDeRAM:inst51.in[4]
+IN[4] => LinhaDeRAM:inst28.in[4]
+IN[4] => LinhaDeRAM:inst36.in[4]
+IN[4] => LinhaDeRAM:inst44.in[4]
+IN[4] => LinhaDeRAM:inst52.in[4]
+IN[4] => LinhaDeRAM:inst29.in[4]
+IN[4] => LinhaDeRAM:inst37.in[4]
+IN[4] => LinhaDeRAM:inst45.in[4]
+IN[4] => LinhaDeRAM:inst53.in[4]
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|DecodificadorDeEndereco:inst21
+linha[0] <= inst49.DB_MAX_OUTPUT_PORT_TYPE
+linha[1] <= inst48.DB_MAX_OUTPUT_PORT_TYPE
+linha[2] <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+linha[3] <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+linha[4] <= inst45.DB_MAX_OUTPUT_PORT_TYPE
+linha[5] <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+linha[6] <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+linha[7] <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+linha[8] <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+linha[9] <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+linha[10] <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+linha[11] <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+linha[12] <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+linha[13] <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+linha[14] <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+linha[15] <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+linha[16] <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+linha[17] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+linha[18] <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+linha[19] <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+linha[20] <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+linha[21] <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+linha[22] <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+linha[23] <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+linha[24] <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+linha[25] <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+linha[26] <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+linha[27] <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+linha[28] <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+linha[29] <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+linha[30] <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+linha[31] <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+Address[0] => inst10.IN2
+Address[0] => inst3.IN0
+Address[0] => inst12.IN2
+Address[0] => inst14.IN2
+Address[0] => inst16.IN2
+Address[1] => inst10.IN1
+Address[1] => inst11.IN1
+Address[1] => inst2.IN0
+Address[1] => inst14.IN1
+Address[1] => inst15.IN1
+Address[2] => inst10.IN0
+Address[2] => inst11.IN0
+Address[2] => inst12.IN0
+Address[2] => inst13.IN0
+Address[2] => inst4.IN0
+Address[3] => inst6.IN1
+Address[3] => inst1.IN0
+Address[3] => inst8.IN1
+Address[4] => inst6.IN0
+Address[4] => inst7.IN0
+Address[4] => inst50.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst30
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst30|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst30|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst30|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst30|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst30|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst38
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst38|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst38|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst38|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst38|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst38|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst46
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst46|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst46|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst46|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst46|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst46|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst23
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst23|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst23|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst23|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst23|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst23|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst31
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst31|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst31|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst31|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst31|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst31|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst39
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst39|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst39|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst39|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst39|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst39|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst47
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst47|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst47|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst47|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst47|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst47|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst24
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst24|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst24|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst24|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst24|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst24|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst32
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst32|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst32|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst32|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst32|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst32|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst40
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst40|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst40|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst40|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst40|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst40|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst48
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst48|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst48|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst48|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst48|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst48|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst25
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst25|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst25|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst25|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst25|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst25|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst33
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst33|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst33|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst33|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst33|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst33|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst41
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst41|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst41|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst41|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst41|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst41|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst49
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst49|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst49|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst49|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst49|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst49|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst26
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst26|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst26|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst26|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst26|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst26|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst34
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst34|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst34|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst34|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst34|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst34|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst42
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst42|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst42|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst42|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst42|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst42|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst50
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst50|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst50|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst50|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst50|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst50|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst27
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst27|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst27|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst27|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst27|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst27|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst35
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst35|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst35|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst35|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst35|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst35|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst43
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst43|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst43|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst43|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst43|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst43|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst51
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst51|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst51|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst51|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst51|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst51|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst28
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst28|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst28|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst28|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst28|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst28|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst36
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst36|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst36|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst36|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst36|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst36|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst44
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst44|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst44|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst44|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst44|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst44|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst52
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst52|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst52|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst52|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst52|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst52|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst29
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst29|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst29|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst29|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst29|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst29|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst37
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst37|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst37|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst37|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst37|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst37|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst45
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst45|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst45|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst45|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst45|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst45|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst53
+out[0] <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => CelulaRAM:inst10.IN
+in[1] => CelulaRAM:inst9.IN
+in[2] => CelulaRAM:inst8.IN
+in[3] => CelulaRAM:inst7.IN
+in[4] => CelulaRAM:inst6.IN
+CLK => CelulaRAM:inst6.CLK
+CLK => CelulaRAM:inst7.CLK
+CLK => CelulaRAM:inst8.CLK
+CLK => CelulaRAM:inst9.CLK
+CLK => CelulaRAM:inst10.CLK
+EN => inst24.IN0
+EN => inst11.OE
+EN => inst25.IN0
+EN => inst.OE
+EN => inst26.IN0
+EN => inst12.OE
+EN => inst27.IN0
+EN => inst13.OE
+EN => inst28.IN0
+EN => inst14.OE
+R/W => inst29.IN1
+R/W => inst30.IN1
+R/W => inst31.IN1
+R/W => inst32.IN1
+R/W => inst33.IN1
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst6
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst7
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst8
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst9
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
+|Placa|MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10
+OUT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+R/W => a3.IN0
+R/W => inst8.IN0
+IN => a1.IN0
+
+
