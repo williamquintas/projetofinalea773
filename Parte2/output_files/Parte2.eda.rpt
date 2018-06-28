@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Parte2
-Mon Jun 25 23:31:56 2018
+Thu Jun 28 20:25:21 2018
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Jun 25 23:31:56 2018 ;
+; EDA Netlist Writer Status ; Successful - Thu Jun 28 20:25:21 2018 ;
 ; Revision Name             ; Parte2                                ;
-; Top-level Entity Name     ; Placa                                 ;
+; Top-level Entity Name     ; MemoriaRAM                            ;
 ; Family                    ; Cyclone II                            ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -80,12 +80,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Jun 25 23:31:55 2018
+    Info: Processing started: Thu Jun 28 20:25:20 2018
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Parte2 -c Parte2
 Info (204019): Generated file Parte2.vo in folder "/net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Parte2/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 324 megabytes
-    Info: Processing ended: Mon Jun 25 23:31:56 2018
+    Info: Peak virtual memory: 315 megabytes
+    Info: Processing ended: Thu Jun 28 20:25:21 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Parte2
-Mon Jun 25 23:31:42 2018
+Thu Jun 28 20:25:05 2018
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,10 +13,9 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Elapsed Time Per Partition
+ 10. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jun 25 23:31:42 2018           ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 28 20:25:05 2018           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Parte2                                          ;
-; Top-level Entity Name              ; Placa                                           ;
+; Top-level Entity Name              ; MemoriaRAM                                      ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 167                                             ;
-;     Total combinational functions  ; 87                                              ;
-;     Dedicated logic registers      ; 80                                              ;
-; Total registers                    ; 80                                              ;
-; Total pins                         ; 16                                              ;
+; Total logic elements               ; 346                                             ;
+;     Total combinational functions  ; 186                                             ;
+;     Dedicated logic registers      ; 160                                             ;
+; Total registers                    ; 160                                             ;
+; Total pins                         ; 177                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -65,7 +64,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C20F484C7       ;                    ;
-; Top-level entity name                                                      ; Placa              ; Parte2             ;
+; Top-level entity name                                                      ; MemoriaRAM         ; Parte2             ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -164,235 +163,240 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; LinhaDeRAM.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Parte2/LinhaDeRAM.bdf              ;         ;
 ; CelulaRAM.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Parte2/CelulaRAM.bdf               ;         ;
 ; MemoriaRAM.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Parte2/MemoriaRAM.bdf              ;         ;
-; Placa.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Parte2/Placa.bdf                   ;         ;
 +----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-; Estimated Total logic elements              ; 167    ;
-;                                             ;        ;
-; Total combinational functions               ; 87     ;
-; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 66     ;
-;     -- 3 input functions                    ; 0      ;
-;     -- <=2 input functions                  ; 21     ;
-;                                             ;        ;
-; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 87     ;
-;     -- arithmetic mode                      ; 0      ;
-;                                             ;        ;
-; Total registers                             ; 80     ;
-;     -- Dedicated logic registers            ; 80     ;
-;     -- I/O registers                        ; 0      ;
-;                                             ;        ;
-; I/O pins                                    ; 16     ;
-; Embedded Multiplier 9-bit elements          ; 0      ;
-; Maximum fan-out node                        ; KEY[3] ;
-; Maximum fan-out                             ; 80     ;
-; Total fan-out                               ; 551    ;
-; Average fan-out                             ; 3.01   ;
-+---------------------------------------------+--------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 346   ;
+;                                             ;       ;
+; Total combinational functions               ; 186   ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 161   ;
+;     -- 3 input functions                    ; 17    ;
+;     -- <=2 input functions                  ; 8     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 186   ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 160   ;
+;     -- Dedicated logic registers            ; 160   ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 177   ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; CLK   ;
+; Maximum fan-out                             ; 160   ;
+; Total fan-out                               ; 1356  ;
+; Average fan-out                             ; 2.59  ;
++---------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                           ;
-+----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+--------------+
-; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                       ; Library Name ;
-+----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+--------------+
-; |Placa                                 ; 87 (0)            ; 80 (0)       ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |Placa                                                    ; work         ;
-;    |MemoriaRAM:inst|                   ; 87 (0)            ; 80 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst                                    ; work         ;
-;       |DecodificadorDeEndereco:inst21| ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|DecodificadorDeEndereco:inst21     ; work         ;
-;       |LinhaDeRAM:inst23|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst23                  ; work         ;
-;          |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst23|CelulaRAM:inst10 ; work         ;
-;          |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst23|CelulaRAM:inst6  ; work         ;
-;          |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst23|CelulaRAM:inst7  ; work         ;
-;          |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst23|CelulaRAM:inst8  ; work         ;
-;          |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst23|CelulaRAM:inst9  ; work         ;
-;       |LinhaDeRAM:inst24|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst24                  ; work         ;
-;          |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst24|CelulaRAM:inst10 ; work         ;
-;          |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst24|CelulaRAM:inst6  ; work         ;
-;          |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst24|CelulaRAM:inst7  ; work         ;
-;          |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst24|CelulaRAM:inst8  ; work         ;
-;          |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst24|CelulaRAM:inst9  ; work         ;
-;       |LinhaDeRAM:inst25|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst25                  ; work         ;
-;          |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst25|CelulaRAM:inst10 ; work         ;
-;          |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst25|CelulaRAM:inst6  ; work         ;
-;          |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst25|CelulaRAM:inst7  ; work         ;
-;          |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst25|CelulaRAM:inst8  ; work         ;
-;          |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst25|CelulaRAM:inst9  ; work         ;
-;       |LinhaDeRAM:inst30|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst30                  ; work         ;
-;          |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst30|CelulaRAM:inst10 ; work         ;
-;          |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst30|CelulaRAM:inst6  ; work         ;
-;          |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst30|CelulaRAM:inst7  ; work         ;
-;          |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst30|CelulaRAM:inst8  ; work         ;
-;          |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst30|CelulaRAM:inst9  ; work         ;
-;       |LinhaDeRAM:inst31|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst31                  ; work         ;
-;          |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst31|CelulaRAM:inst10 ; work         ;
-;          |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst31|CelulaRAM:inst6  ; work         ;
-;          |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst31|CelulaRAM:inst7  ; work         ;
-;          |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst31|CelulaRAM:inst8  ; work         ;
-;          |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst31|CelulaRAM:inst9  ; work         ;
-;       |LinhaDeRAM:inst32|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst32                  ; work         ;
-;          |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst32|CelulaRAM:inst10 ; work         ;
-;          |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst32|CelulaRAM:inst6  ; work         ;
-;          |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst32|CelulaRAM:inst7  ; work         ;
-;          |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst32|CelulaRAM:inst8  ; work         ;
-;          |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst32|CelulaRAM:inst9  ; work         ;
-;       |LinhaDeRAM:inst33|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst33                  ; work         ;
-;          |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst33|CelulaRAM:inst10 ; work         ;
-;          |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst33|CelulaRAM:inst6  ; work         ;
-;          |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst33|CelulaRAM:inst7  ; work         ;
-;          |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst33|CelulaRAM:inst8  ; work         ;
-;          |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst33|CelulaRAM:inst9  ; work         ;
-;       |LinhaDeRAM:inst38|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst38                  ; work         ;
-;          |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst38|CelulaRAM:inst10 ; work         ;
-;          |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst38|CelulaRAM:inst6  ; work         ;
-;          |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst38|CelulaRAM:inst7  ; work         ;
-;          |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst38|CelulaRAM:inst8  ; work         ;
-;          |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst38|CelulaRAM:inst9  ; work         ;
-;       |LinhaDeRAM:inst39|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst39                  ; work         ;
-;          |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst39|CelulaRAM:inst10 ; work         ;
-;          |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst39|CelulaRAM:inst6  ; work         ;
-;          |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst39|CelulaRAM:inst7  ; work         ;
-;          |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst39|CelulaRAM:inst8  ; work         ;
-;          |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst39|CelulaRAM:inst9  ; work         ;
-;       |LinhaDeRAM:inst40|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst40                  ; work         ;
-;          |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst40|CelulaRAM:inst10 ; work         ;
-;          |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst40|CelulaRAM:inst6  ; work         ;
-;          |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst40|CelulaRAM:inst7  ; work         ;
-;          |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst40|CelulaRAM:inst8  ; work         ;
-;          |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst40|CelulaRAM:inst9  ; work         ;
-;       |LinhaDeRAM:inst41|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst41                  ; work         ;
-;          |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst41|CelulaRAM:inst10 ; work         ;
-;          |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst41|CelulaRAM:inst6  ; work         ;
-;          |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst41|CelulaRAM:inst7  ; work         ;
-;          |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst41|CelulaRAM:inst8  ; work         ;
-;          |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst41|CelulaRAM:inst9  ; work         ;
-;       |LinhaDeRAM:inst46|              ; 2 (2)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst46                  ; work         ;
-;          |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst46|CelulaRAM:inst10 ; work         ;
-;          |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst46|CelulaRAM:inst6  ; work         ;
-;          |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst46|CelulaRAM:inst7  ; work         ;
-;          |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst46|CelulaRAM:inst8  ; work         ;
-;          |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst46|CelulaRAM:inst9  ; work         ;
-;       |LinhaDeRAM:inst47|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst47                  ; work         ;
-;          |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst47|CelulaRAM:inst10 ; work         ;
-;          |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst47|CelulaRAM:inst6  ; work         ;
-;          |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst47|CelulaRAM:inst7  ; work         ;
-;          |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst47|CelulaRAM:inst8  ; work         ;
-;          |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst47|CelulaRAM:inst9  ; work         ;
-;       |LinhaDeRAM:inst48|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst48                  ; work         ;
-;          |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst48|CelulaRAM:inst10 ; work         ;
-;          |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst48|CelulaRAM:inst6  ; work         ;
-;          |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst48|CelulaRAM:inst7  ; work         ;
-;          |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst48|CelulaRAM:inst8  ; work         ;
-;          |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst48|CelulaRAM:inst9  ; work         ;
-;       |LinhaDeRAM:inst49|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst49                  ; work         ;
-;          |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst49|CelulaRAM:inst10 ; work         ;
-;          |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst49|CelulaRAM:inst6  ; work         ;
-;          |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst49|CelulaRAM:inst7  ; work         ;
-;          |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst49|CelulaRAM:inst8  ; work         ;
-;          |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst49|CelulaRAM:inst9  ; work         ;
-;       |LinhaDeRAM:inst|                ; 55 (55)           ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst                    ; work         ;
-;          |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst|CelulaRAM:inst10   ; work         ;
-;          |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst|CelulaRAM:inst6    ; work         ;
-;          |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst|CelulaRAM:inst7    ; work         ;
-;          |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst|CelulaRAM:inst8    ; work         ;
-;          |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Placa|MemoriaRAM:inst|LinhaDeRAM:inst|CelulaRAM:inst9    ; work         ;
-+----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                             ;
++-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------+--------------+
+; Compilation Hierarchy Node          ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                            ; Library Name ;
++-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------+--------------+
+; |MemoriaRAM                         ; 186 (0)           ; 160 (0)      ; 0           ; 0            ; 0       ; 0         ; 177  ; 0            ; |MemoriaRAM                                    ; work         ;
+;    |DecodificadorDeEndereco:inst21| ; 40 (40)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|DecodificadorDeEndereco:inst21     ; work         ;
+;    |LinhaDeRAM:inst23|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst23                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst23|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst23|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst23|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst23|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst23|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst24|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst24                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst24|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst24|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst24|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst24|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst24|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst25|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst25                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst25|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst25|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst25|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst25|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst25|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst26|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst26                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst26|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst26|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst26|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst26|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst26|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst27|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst27                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst27|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst27|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst27|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst27|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst27|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst28|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst28                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst28|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst28|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst28|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst28|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst28|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst29|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst29                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst29|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst29|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst29|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst29|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst29|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst30|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst30                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst30|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst30|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst30|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst30|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst30|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst31|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst31                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst31|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst31|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst31|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst31|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst31|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst32|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst32                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst32|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst32|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst32|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst32|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst32|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst33|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst33                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst33|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst33|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst33|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst33|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst33|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst34|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst34                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst34|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst34|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst34|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst34|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst34|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst35|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst35                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst35|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst35|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst35|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst35|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst35|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst36|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst36                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst36|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst36|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst36|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst36|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst36|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst37|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst37                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst37|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst37|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst37|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst37|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst37|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst38|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst38                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst38|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst38|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst38|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst38|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst38|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst39|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst39                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst39|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst39|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst39|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst39|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst39|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst40|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst40                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst40|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst40|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst40|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst40|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst40|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst41|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst41                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst41|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst41|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst41|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst41|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst41|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst42|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst42                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst42|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst42|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst42|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst42|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst42|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst43|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst43                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst43|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst43|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst43|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst43|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst43|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst44|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst44                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst44|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst44|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst44|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst44|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst44|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst45|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst45                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst45|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst45|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst45|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst45|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst45|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst46|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst46                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst46|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst46|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst46|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst46|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst46|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst47|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst47                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst47|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst47|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst47|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst47|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst47|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst48|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst48                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst48|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst48|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst48|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst48|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst48|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst49|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst49                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst49|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst49|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst49|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst49|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst49|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst50|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst50                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst50|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst50|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst50|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst50|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst50|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst51|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst51                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst51|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst51|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst51|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst51|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst51|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst52|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst52                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst52|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst52|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst52|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst52|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst52|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst53|              ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst53                  ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst53|CelulaRAM:inst10 ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst53|CelulaRAM:inst6  ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst53|CelulaRAM:inst7  ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst53|CelulaRAM:inst8  ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst53|CelulaRAM:inst9  ; work         ;
+;    |LinhaDeRAM:inst|                ; 115 (115)         ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst                    ; work         ;
+;       |CelulaRAM:inst10|            ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst|CelulaRAM:inst10   ; work         ;
+;       |CelulaRAM:inst6|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst|CelulaRAM:inst6    ; work         ;
+;       |CelulaRAM:inst7|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst|CelulaRAM:inst7    ; work         ;
+;       |CelulaRAM:inst8|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst|CelulaRAM:inst8    ; work         ;
+;       |CelulaRAM:inst9|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MemoriaRAM|LinhaDeRAM:inst|CelulaRAM:inst9    ; work         ;
++-------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                            ;
-+---------------------------------------------------------+---------------------------------------------------------------------+
-; Register name                                           ; Reason for Removal                                                  ;
-+---------------------------------------------------------+---------------------------------------------------------------------+
-; MemoriaRAM:inst|LinhaDeRAM:inst26|CelulaRAM:inst7|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst43|CelulaRAM:inst9|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst37|CelulaRAM:inst10|inst ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst34|CelulaRAM:inst10|inst ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst35|CelulaRAM:inst6|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst45|CelulaRAM:inst10|inst ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst51|CelulaRAM:inst8|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst7|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst35|CelulaRAM:inst10|inst ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst37|CelulaRAM:inst8|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst42|CelulaRAM:inst9|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst27|CelulaRAM:inst7|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst29|CelulaRAM:inst9|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst34|CelulaRAM:inst6|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst45|CelulaRAM:inst8|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst51|CelulaRAM:inst10|inst ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst45|CelulaRAM:inst6|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst51|CelulaRAM:inst6|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst44|CelulaRAM:inst7|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst43|CelulaRAM:inst7|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst37|CelulaRAM:inst9|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst35|CelulaRAM:inst8|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst36|CelulaRAM:inst6|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst27|CelulaRAM:inst9|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst37|CelulaRAM:inst7|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst28|CelulaRAM:inst7|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst50|CelulaRAM:inst10|inst ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst29|CelulaRAM:inst7|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst52|CelulaRAM:inst8|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst28|CelulaRAM:inst10|inst ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst36|CelulaRAM:inst8|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst52|CelulaRAM:inst6|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst36|CelulaRAM:inst7|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst50|CelulaRAM:inst7|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst28|CelulaRAM:inst6|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst44|CelulaRAM:inst8|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst51|CelulaRAM:inst9|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst34|CelulaRAM:inst8|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst51|CelulaRAM:inst7|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst44|CelulaRAM:inst6|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst43|CelulaRAM:inst10|inst ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst29|CelulaRAM:inst6|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst43|CelulaRAM:inst8|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst50|CelulaRAM:inst6|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst43|CelulaRAM:inst6|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst42|CelulaRAM:inst10|inst ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst35|CelulaRAM:inst9|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst42|CelulaRAM:inst6|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst35|CelulaRAM:inst7|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst42|CelulaRAM:inst8|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst27|CelulaRAM:inst10|inst ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst29|CelulaRAM:inst8|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst27|CelulaRAM:inst8|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst26|CelulaRAM:inst10|inst ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst27|CelulaRAM:inst6|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst26|CelulaRAM:inst6|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst44|CelulaRAM:inst9|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst50|CelulaRAM:inst9|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst52|CelulaRAM:inst10|inst ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst52|CelulaRAM:inst9|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst26|CelulaRAM:inst9|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst9|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst6|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst36|CelulaRAM:inst9|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst28|CelulaRAM:inst8|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst29|CelulaRAM:inst10|inst ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst34|CelulaRAM:inst9|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst36|CelulaRAM:inst10|inst ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst52|CelulaRAM:inst7|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst44|CelulaRAM:inst10|inst ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst42|CelulaRAM:inst7|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst26|CelulaRAM:inst8|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst8|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst34|CelulaRAM:inst7|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst28|CelulaRAM:inst9|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst45|CelulaRAM:inst9|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst45|CelulaRAM:inst7|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst37|CelulaRAM:inst6|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst50|CelulaRAM:inst8|inst  ; Merged with MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ;
-; MemoriaRAM:inst|LinhaDeRAM:inst53|CelulaRAM:inst10|inst ; Stuck at GND due to stuck port data_in                              ;
-; Total Number of Removed Registers = 80                  ;                                                                     ;
-+---------------------------------------------------------+---------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -400,12 +404,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 80    ;
+; Total registers                              ; 160   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 80    ;
+; Number of registers using Clock Enable       ; 160   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -425,7 +429,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Jun 25 23:31:39 2018
+    Info: Processing started: Thu Jun 28 20:25:03 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Parte2 -c Parte2
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file DecodificadorDeEndereco.bdf
@@ -436,110 +440,26 @@ Info (12021): Found 1 design units, including 1 entities, in source file CelulaR
     Info (12023): Found entity 1: CelulaRAM
 Info (12021): Found 1 design units, including 1 entities, in source file MemoriaRAM.bdf
     Info (12023): Found entity 1: MemoriaRAM
-Info (12021): Found 1 design units, including 1 entities, in source file Placa.bdf
-    Info (12023): Found entity 1: Placa
-Info (12127): Elaborating entity "Placa" for the top level hierarchy
-Info (12128): Elaborating entity "MemoriaRAM" for hierarchy "MemoriaRAM:inst"
-Info (12128): Elaborating entity "LinhaDeRAM" for hierarchy "MemoriaRAM:inst|LinhaDeRAM:inst"
-Info (12128): Elaborating entity "CelulaRAM" for hierarchy "MemoriaRAM:inst|LinhaDeRAM:inst|CelulaRAM:inst6"
-Info (12128): Elaborating entity "DecodificadorDeEndereco" for hierarchy "MemoriaRAM:inst|DecodificadorDeEndereco:inst21"
-Warning (13027): Removed fan-outs from the following always-disabled I/O buffers
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst26|inst11" to the node "LEDR[4]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst34|inst11" to the node "LEDR[4]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst42|inst11" to the node "LEDR[4]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst50|inst11" to the node "LEDR[4]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst27|inst11" to the node "LEDR[4]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst35|inst11" to the node "LEDR[4]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst43|inst11" to the node "LEDR[4]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst51|inst11" to the node "LEDR[4]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst28|inst11" to the node "LEDR[4]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst36|inst11" to the node "LEDR[4]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst44|inst11" to the node "LEDR[4]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst52|inst11" to the node "LEDR[4]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst29|inst11" to the node "LEDR[4]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst37|inst11" to the node "LEDR[4]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst45|inst11" to the node "LEDR[4]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst53|inst11" to the node "LEDR[4]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst26|inst" to the node "LEDR[3]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst34|inst" to the node "LEDR[3]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst42|inst" to the node "LEDR[3]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst50|inst" to the node "LEDR[3]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst27|inst" to the node "LEDR[3]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst35|inst" to the node "LEDR[3]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst43|inst" to the node "LEDR[3]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst51|inst" to the node "LEDR[3]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst28|inst" to the node "LEDR[3]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst36|inst" to the node "LEDR[3]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst44|inst" to the node "LEDR[3]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst52|inst" to the node "LEDR[3]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst29|inst" to the node "LEDR[3]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst37|inst" to the node "LEDR[3]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst45|inst" to the node "LEDR[3]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst53|inst" to the node "LEDR[3]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst26|inst12" to the node "LEDR[2]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst34|inst12" to the node "LEDR[2]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst42|inst12" to the node "LEDR[2]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst50|inst12" to the node "LEDR[2]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst27|inst12" to the node "LEDR[2]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst35|inst12" to the node "LEDR[2]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst43|inst12" to the node "LEDR[2]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst51|inst12" to the node "LEDR[2]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst28|inst12" to the node "LEDR[2]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst36|inst12" to the node "LEDR[2]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst44|inst12" to the node "LEDR[2]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst52|inst12" to the node "LEDR[2]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst29|inst12" to the node "LEDR[2]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst37|inst12" to the node "LEDR[2]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst45|inst12" to the node "LEDR[2]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst53|inst12" to the node "LEDR[2]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst26|inst13" to the node "LEDR[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst34|inst13" to the node "LEDR[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst42|inst13" to the node "LEDR[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst50|inst13" to the node "LEDR[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst27|inst13" to the node "LEDR[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst35|inst13" to the node "LEDR[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst43|inst13" to the node "LEDR[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst51|inst13" to the node "LEDR[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst28|inst13" to the node "LEDR[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst36|inst13" to the node "LEDR[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst44|inst13" to the node "LEDR[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst52|inst13" to the node "LEDR[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst29|inst13" to the node "LEDR[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst37|inst13" to the node "LEDR[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst45|inst13" to the node "LEDR[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst53|inst13" to the node "LEDR[1]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst26|inst14" to the node "LEDR[0]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst34|inst14" to the node "LEDR[0]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst42|inst14" to the node "LEDR[0]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst50|inst14" to the node "LEDR[0]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst27|inst14" to the node "LEDR[0]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst35|inst14" to the node "LEDR[0]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst43|inst14" to the node "LEDR[0]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst51|inst14" to the node "LEDR[0]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst28|inst14" to the node "LEDR[0]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst36|inst14" to the node "LEDR[0]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst44|inst14" to the node "LEDR[0]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst52|inst14" to the node "LEDR[0]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst29|inst14" to the node "LEDR[0]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst37|inst14" to the node "LEDR[0]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst45|inst14" to the node "LEDR[0]"
-    Warning (13028): Removed fan-out from the always-disabled I/O buffer "MemoriaRAM:inst|LinhaDeRAM:inst53|inst14" to the node "LEDR[0]"
+Info (12127): Elaborating entity "MemoriaRAM" for the top level hierarchy
+Info (12128): Elaborating entity "LinhaDeRAM" for hierarchy "LinhaDeRAM:inst"
+Info (12128): Elaborating entity "CelulaRAM" for hierarchy "LinhaDeRAM:inst|CelulaRAM:inst10"
+Info (12128): Elaborating entity "DecodificadorDeEndereco" for hierarchy "DecodificadorDeEndereco:inst21"
 Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "MemoriaRAM:inst|LinhaDeRAM:inst|inst11~synth"
-    Warning (13010): Node "MemoriaRAM:inst|LinhaDeRAM:inst|inst~synth"
-    Warning (13010): Node "MemoriaRAM:inst|LinhaDeRAM:inst|inst12~synth"
-    Warning (13010): Node "MemoriaRAM:inst|LinhaDeRAM:inst|inst13~synth"
-    Warning (13010): Node "MemoriaRAM:inst|LinhaDeRAM:inst|inst14~synth"
+    Warning (13010): Node "LinhaDeRAM:inst|inst11~synth"
+    Warning (13010): Node "LinhaDeRAM:inst|inst~synth"
+    Warning (13010): Node "LinhaDeRAM:inst|inst12~synth"
+    Warning (13010): Node "LinhaDeRAM:inst|inst13~synth"
+    Warning (13010): Node "LinhaDeRAM:inst|inst14~synth"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 183 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 167 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 88 warnings
+Info (21057): Implemented 523 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 165 output pins
+    Info (21061): Implemented 346 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 7 warnings
     Info: Peak virtual memory: 342 megabytes
-    Info: Processing ended: Mon Jun 25 23:31:42 2018
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Thu Jun 28 20:25:05 2018
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

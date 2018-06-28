@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone II"
 set_global_assignment -name DEVICE EP2C20F484C7
-set_global_assignment -name TOP_LEVEL_ENTITY Placa
+set_global_assignment -name TOP_LEVEL_ENTITY MemoriaRAM
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:16:44  JUNE 25, 2018"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -60,7 +60,6 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE CelulaRAM.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE LinhaRAM.vwf
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name VECTOR_WAVEFORM_FILE MemoriaRAM.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Parte2/MemoriaRAM.vwf
 set_location_assignment PIN_A13 -to GPIO_0[0]
 set_location_assignment PIN_B13 -to GPIO_0[1]
 set_location_assignment PIN_A14 -to GPIO_0[2]
@@ -506,8 +505,8 @@ set_location_assignment PIN_Y7 -to SRAM_LB_N
 set_location_assignment PIN_T8 -to SRAM_OE_N
 set_location_assignment PIN_W7 -to SRAM_UB_N
 set_location_assignment PIN_AA10 -to SRAM_WE_N
-set_global_assignment -name BDF_FILE Placa.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Parte2/MemoriaRAM.vwf
