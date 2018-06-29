@@ -506,3 +506,5 @@ set_global_assignment -name BDF_FILE Placa.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/DIsplay5bits.vwf
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name BDF_FILE Tristate5bits.bdf
+set_global_assignment -name BDF_FILE Displays.bdf

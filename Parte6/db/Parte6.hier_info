@@ -1,0 +1,29 @@
+|Registrador5bits
+output[0] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.CLK
+CLK => inst1.CLK
+CLK => inst2.CLK
+CLK => inst3.CLK
+CLK => inst21.CLK
+input[0] => inst10.IN0
+input[1] => inst12.IN0
+input[2] => inst14.IN0
+input[3] => inst16.IN0
+input[4] => inst20.IN0
+EN => inst16.IN1
+EN => inst17.IN0
+EN => inst14.IN1
+EN => inst12.IN1
+EN => inst10.IN1
+EN => inst20.IN1
+CLR => inst16.IN2
+CLR => inst14.IN2
+CLR => inst12.IN2
+CLR => inst10.IN2
+CLR => inst20.IN2
+
+
