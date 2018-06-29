@@ -45,6 +45,13 @@ applicable agreement for further details.
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
+		(pt 0 80)
+		(input)
+		(text "Cin" (rect 0 0 18 13)(font "Arial" (font_size 8)))
+		(text "Cin" (rect 21 75 39 88)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
 		(pt 144 32)
 		(output)
 		(text "OUT[4..0]" (rect 0 0 55 13)(font "Arial" (font_size 8)))
