@@ -1,0 +1,309 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 192 656)
+	(text "Displays" (rect 5 0 53 13)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 625 25 636)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "A[4..0]" (rect 0 0 36 13)(font "Arial" (font_size 8)))
+		(text "A[4..0]" (rect 21 27 57 40)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "B[4..0]" (rect 0 0 36 13)(font "Arial" (font_size 8)))
+		(text "B[4..0]" (rect 21 43 57 56)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Ac[4..0]" (rect 0 0 43 13)(font "Arial" (font_size 8)))
+		(text "Ac[4..0]" (rect 21 59 64 72)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "PC[4..0]" (rect 0 0 46 13)(font "Arial" (font_size 8)))
+		(text "PC[4..0]" (rect 21 75 67 88)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "RAM_00[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_00[4..0]" (rect 21 91 98 104)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "RAM_01[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_01[4..0]" (rect 21 107 98 120)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "RAM_02[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_02[4..0]" (rect 21 123 98 136)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "RAM_03[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_03[4..0]" (rect 21 139 98 152)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "RAM_04[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_04[4..0]" (rect 21 155 98 168)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "RAM_05[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_05[4..0]" (rect 21 171 98 184)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "RAM_06[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_06[4..0]" (rect 21 187 98 200)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "RAM_07[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_07[4..0]" (rect 21 203 98 216)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "RAM_08[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_08[4..0]" (rect 21 219 98 232)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 16 224)(line_width 3))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "RAM_09[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_09[4..0]" (rect 21 235 98 248)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 16 240)(line_width 3))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "RAM_10[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_10[4..0]" (rect 21 251 98 264)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 16 256)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "RAM_11[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_11[4..0]" (rect 21 267 98 280)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 16 272)(line_width 3))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "RAM_12[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_12[4..0]" (rect 21 283 98 296)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 16 288)(line_width 3))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "RAM_13[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_13[4..0]" (rect 21 299 98 312)(font "Arial" (font_size 8)))
+		(line (pt 0 304)(pt 16 304)(line_width 3))
+	)
+	(port
+		(pt 0 320)
+		(input)
+		(text "RAM_14[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_14[4..0]" (rect 21 315 98 328)(font "Arial" (font_size 8)))
+		(line (pt 0 320)(pt 16 320)(line_width 3))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "RAM_15[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_15[4..0]" (rect 21 331 98 344)(font "Arial" (font_size 8)))
+		(line (pt 0 336)(pt 16 336)(line_width 3))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "RAM_16[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_16[4..0]" (rect 21 347 98 360)(font "Arial" (font_size 8)))
+		(line (pt 0 352)(pt 16 352)(line_width 3))
+	)
+	(port
+		(pt 0 368)
+		(input)
+		(text "RAM_17[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_17[4..0]" (rect 21 363 98 376)(font "Arial" (font_size 8)))
+		(line (pt 0 368)(pt 16 368)(line_width 3))
+	)
+	(port
+		(pt 0 384)
+		(input)
+		(text "RAM_18[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_18[4..0]" (rect 21 379 98 392)(font "Arial" (font_size 8)))
+		(line (pt 0 384)(pt 16 384)(line_width 3))
+	)
+	(port
+		(pt 0 400)
+		(input)
+		(text "RAM_19[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_19[4..0]" (rect 21 395 98 408)(font "Arial" (font_size 8)))
+		(line (pt 0 400)(pt 16 400)(line_width 3))
+	)
+	(port
+		(pt 0 416)
+		(input)
+		(text "RAM_20[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_20[4..0]" (rect 21 411 98 424)(font "Arial" (font_size 8)))
+		(line (pt 0 416)(pt 16 416)(line_width 3))
+	)
+	(port
+		(pt 0 432)
+		(input)
+		(text "RAM_21[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_21[4..0]" (rect 21 427 98 440)(font "Arial" (font_size 8)))
+		(line (pt 0 432)(pt 16 432)(line_width 3))
+	)
+	(port
+		(pt 0 448)
+		(input)
+		(text "RAM_22[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_22[4..0]" (rect 21 443 98 456)(font "Arial" (font_size 8)))
+		(line (pt 0 448)(pt 16 448)(line_width 3))
+	)
+	(port
+		(pt 0 464)
+		(input)
+		(text "RAM_23[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_23[4..0]" (rect 21 459 98 472)(font "Arial" (font_size 8)))
+		(line (pt 0 464)(pt 16 464)(line_width 3))
+	)
+	(port
+		(pt 0 480)
+		(input)
+		(text "RAM_24[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_24[4..0]" (rect 21 475 98 488)(font "Arial" (font_size 8)))
+		(line (pt 0 480)(pt 16 480)(line_width 3))
+	)
+	(port
+		(pt 0 496)
+		(input)
+		(text "RAM_25[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_25[4..0]" (rect 21 491 98 504)(font "Arial" (font_size 8)))
+		(line (pt 0 496)(pt 16 496)(line_width 3))
+	)
+	(port
+		(pt 0 512)
+		(input)
+		(text "RAM_26[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_26[4..0]" (rect 21 507 98 520)(font "Arial" (font_size 8)))
+		(line (pt 0 512)(pt 16 512)(line_width 3))
+	)
+	(port
+		(pt 0 528)
+		(input)
+		(text "RAM_27[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_27[4..0]" (rect 21 523 98 536)(font "Arial" (font_size 8)))
+		(line (pt 0 528)(pt 16 528)(line_width 3))
+	)
+	(port
+		(pt 0 544)
+		(input)
+		(text "RAM_28[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_28[4..0]" (rect 21 539 98 552)(font "Arial" (font_size 8)))
+		(line (pt 0 544)(pt 16 544)(line_width 3))
+	)
+	(port
+		(pt 0 560)
+		(input)
+		(text "RAM_29[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_29[4..0]" (rect 21 555 98 568)(font "Arial" (font_size 8)))
+		(line (pt 0 560)(pt 16 560)(line_width 3))
+	)
+	(port
+		(pt 0 576)
+		(input)
+		(text "RAM_30[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_30[4..0]" (rect 21 571 98 584)(font "Arial" (font_size 8)))
+		(line (pt 0 576)(pt 16 576)(line_width 3))
+	)
+	(port
+		(pt 0 592)
+		(input)
+		(text "RAM_31[4..0]" (rect 0 0 77 13)(font "Arial" (font_size 8)))
+		(text "RAM_31[4..0]" (rect 21 587 98 600)(font "Arial" (font_size 8)))
+		(line (pt 0 592)(pt 16 592)(line_width 3))
+	)
+	(port
+		(pt 176 32)
+		(output)
+		(text "D0[4..0]" (rect 0 0 44 13)(font "Arial" (font_size 8)))
+		(text "D0[4..0]" (rect 111 27 155 40)(font "Arial" (font_size 8)))
+		(line (pt 176 32)(pt 160 32)(line_width 3))
+	)
+	(port
+		(pt 176 48)
+		(output)
+		(text "D1[4..0]" (rect 0 0 44 13)(font "Arial" (font_size 8)))
+		(text "D1[4..0]" (rect 111 43 155 56)(font "Arial" (font_size 8)))
+		(line (pt 176 48)(pt 160 48)(line_width 3))
+	)
+	(port
+		(pt 176 64)
+		(output)
+		(text "D2[4..0]" (rect 0 0 44 13)(font "Arial" (font_size 8)))
+		(text "D2[4..0]" (rect 111 59 155 72)(font "Arial" (font_size 8)))
+		(line (pt 176 64)(pt 160 64)(line_width 3))
+	)
+	(port
+		(pt 176 80)
+		(output)
+		(text "D3[4..0]" (rect 0 0 44 13)(font "Arial" (font_size 8)))
+		(text "D3[4..0]" (rect 111 75 155 88)(font "Arial" (font_size 8)))
+		(line (pt 176 80)(pt 160 80)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 160 624))
+	)
+)
