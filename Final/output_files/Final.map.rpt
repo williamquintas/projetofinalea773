@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Final
-Fri Jun 29 01:00:39 2018
+Fri Jun 29 21:54:53 2018
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -41,16 +41,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jun 29 01:00:39 2018           ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 29 21:54:52 2018           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Final                                           ;
-; Top-level Entity Name              ; BlocoLogArit                                    ;
+; Top-level Entity Name              ; ParadaDesvio                                    ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 42                                              ;
-;     Total combinational functions  ; 42                                              ;
-;     Dedicated logic registers      ; 1                                               ;
-; Total registers                    ; 1                                               ;
-; Total pins                         ; 21                                              ;
+; Total logic elements               ; 17                                              ;
+;     Total combinational functions  ; 17                                              ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 20                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP2C20F484C7       ;                    ;
-; Top-level entity name                                                      ; BlocoLogArit       ; Final              ;
+; Top-level entity name                                                      ; ParadaDesvio       ; Final              ;
 ; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -159,69 +159,54 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                         ; Library ;
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------+---------+
-; Zera.bdf                         ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/Zera.bdf            ;         ;
-; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/ULA.bdf             ;         ;
-; Tristate5bits.bdf                ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/Tristate5bits.bdf   ;         ;
 ; SomadorCompleto.bdf              ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/SomadorCompleto.bdf ;         ;
 ; Soma.bdf                         ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/Soma.bdf            ;         ;
 ; MeioSomador.bdf                  ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/MeioSomador.bdf     ;         ;
-; Decodificador.bdf                ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/Decodificador.bdf   ;         ;
-; Complementa.bdf                  ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/Complementa.bdf     ;         ;
-; BlocoLogArit.bdf                 ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/BlocoLogArit.bdf    ;         ;
+; ParadaDesvio.bdf                 ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/ParadaDesvio.bdf    ;         ;
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimated Total logic elements              ; 42       ;
-;                                             ;          ;
-; Total combinational functions               ; 42       ;
-; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 35       ;
-;     -- 3 input functions                    ; 1        ;
-;     -- <=2 input functions                  ; 6        ;
-;                                             ;          ;
-; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 42       ;
-;     -- arithmetic mode                      ; 0        ;
-;                                             ;          ;
-; Total registers                             ; 1        ;
-;     -- Dedicated logic registers            ; 1        ;
-;     -- I/O registers                        ; 0        ;
-;                                             ;          ;
-; I/O pins                                    ; 21       ;
-; Embedded Multiplier 9-bit elements          ; 0        ;
-; Maximum fan-out node                        ; inst19~1 ;
-; Maximum fan-out                             ; 11       ;
-; Total fan-out                               ; 167      ;
-; Average fan-out                             ; 2.61     ;
-+---------------------------------------------+----------+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++---------------------------------------------+---------+
+; Resource                                    ; Usage   ;
++---------------------------------------------+---------+
+; Estimated Total logic elements              ; 17      ;
+;                                             ;         ;
+; Total combinational functions               ; 17      ;
+; Logic element usage by number of LUT inputs ;         ;
+;     -- 4 input functions                    ; 13      ;
+;     -- 3 input functions                    ; 3       ;
+;     -- <=2 input functions                  ; 1       ;
+;                                             ;         ;
+; Logic elements by mode                      ;         ;
+;     -- normal mode                          ; 17      ;
+;     -- arithmetic mode                      ; 0       ;
+;                                             ;         ;
+; Total registers                             ; 0       ;
+;     -- Dedicated logic registers            ; 0       ;
+;     -- I/O registers                        ; 0       ;
+;                                             ;         ;
+; I/O pins                                    ; 20      ;
+; Embedded Multiplier 9-bit elements          ; 0       ;
+; Maximum fan-out node                        ; inst9~0 ;
+; Maximum fan-out                             ; 6       ;
+; Total fan-out                               ; 69      ;
+; Average fan-out                             ; 1.86    ;
++---------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                      ;
-+-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                       ; Library Name ;
-+-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
-; |BlocoLogArit                     ; 42 (16)           ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |BlocoLogArit                                                             ; work         ;
-;    |Tristate5bits:inst42|         ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BlocoLogArit|Tristate5bits:inst42                                        ; work         ;
-;    |ULA:ula|                      ; 16 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BlocoLogArit|ULA:ula                                                     ; work         ;
-;       |Soma:inst2|                ; 15 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BlocoLogArit|ULA:ula|Soma:inst2                                          ; work         ;
-;          |SomadorCompleto:inst13| ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst13                   ; work         ;
-;             |MeioSomador:inst1|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst13|MeioSomador:inst1 ; work         ;
-;          |SomadorCompleto:inst4|  ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst4                    ; work         ;
-;             |MeioSomador:inst1|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst4|MeioSomador:inst1  ; work         ;
-;          |SomadorCompleto:inst5|  ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst5                    ; work         ;
-;             |MeioSomador:inst1|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst5|MeioSomador:inst1  ; work         ;
-;          |SomadorCompleto:inst6|  ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst6                    ; work         ;
-;             |MeioSomador:inst1|   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst6|MeioSomador:inst1  ; work         ;
-;          |SomadorCompleto:inst|   ; 3 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst                     ; work         ;
-;             |MeioSomador:inst1|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst|MeioSomador:inst1   ; work         ;
-;             |MeioSomador:inst|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst|MeioSomador:inst    ; work         ;
-+-----------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                           ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                               ; Library Name ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+--------------+
+; |ParadaDesvio                  ; 17 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |ParadaDesvio                                                     ; work         ;
+;    |Soma:Somador|              ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ParadaDesvio|Soma:Somador                                        ; work         ;
+;       |SomadorCompleto:inst13| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ParadaDesvio|Soma:Somador|SomadorCompleto:inst13                 ; work         ;
+;       |SomadorCompleto:inst4|  ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ParadaDesvio|Soma:Somador|SomadorCompleto:inst4                  ; work         ;
+;          |MeioSomador:inst|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ParadaDesvio|Soma:Somador|SomadorCompleto:inst4|MeioSomador:inst ; work         ;
++--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -230,7 +215,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1     ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -255,7 +240,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Jun 29 01:00:37 2018
+    Info: Processing started: Fri Jun 29 21:54:50 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Final -c Final
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file Zera.bdf
@@ -296,37 +281,24 @@ Info (12021): Found 1 design units, including 1 entities, in source file CelulaR
     Info (12023): Found entity 1: CelulaRAM
 Info (12021): Found 1 design units, including 1 entities, in source file BlocoLogArit.bdf
     Info (12023): Found entity 1: BlocoLogArit
-Info (12127): Elaborating entity "BlocoLogArit" for the top level hierarchy
-Info (12128): Elaborating entity "Tristate5bits" for hierarchy "Tristate5bits:inst42"
-Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ula"
-Info (12128): Elaborating entity "Soma" for hierarchy "ULA:ula|Soma:inst2"
-Info (12128): Elaborating entity "SomadorCompleto" for hierarchy "ULA:ula|Soma:inst2|SomadorCompleto:inst6"
-Info (12128): Elaborating entity "MeioSomador" for hierarchy "ULA:ula|Soma:inst2|SomadorCompleto:inst6|MeioSomador:inst"
-Info (12128): Elaborating entity "Decodificador" for hierarchy "ULA:ula|Decodificador:inst3"
-Warning (275009): Pin "f2" not connected
-Info (12128): Elaborating entity "Complementa" for hierarchy "ULA:ula|Complementa:inst"
-Info (12128): Elaborating entity "Zera" for hierarchy "ULA:ula|Zera:inst5"
-Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13048): Converted tri-state node "ULAX[4]" into a selector
-    Warning (13048): Converted tri-state node "ULAX[3]" into a selector
-    Warning (13048): Converted tri-state node "ULAX[2]" into a selector
-    Warning (13048): Converted tri-state node "ULAX[1]" into a selector
-    Warning (13048): Converted tri-state node "ULAX[0]" into a selector
-    Warning (13048): Converted tri-state node "ULAY[4]" into a selector
-    Warning (13048): Converted tri-state node "ULAY[3]" into a selector
-    Warning (13048): Converted tri-state node "ULAY[2]" into a selector
-    Warning (13048): Converted tri-state node "ULAY[1]" into a selector
-    Warning (13048): Converted tri-state node "ULAY[0]" into a selector
+Info (12021): Found 1 design units, including 1 entities, in source file Microprocessador5bits.bdf
+    Info (12023): Found entity 1: Microprocessador5bits
+Info (12021): Found 1 design units, including 1 entities, in source file ParadaDesvio.bdf
+    Info (12023): Found entity 1: ParadaDesvio
+Info (12127): Elaborating entity "ParadaDesvio" for the top level hierarchy
+Info (12128): Elaborating entity "Soma" for hierarchy "Soma:Somador"
+Info (12128): Elaborating entity "SomadorCompleto" for hierarchy "Soma:Somador|SomadorCompleto:inst6"
+Info (12128): Elaborating entity "MeioSomador" for hierarchy "Soma:Somador|SomadorCompleto:inst6|MeioSomador:inst"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 63 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 16 input pins
-    Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 42 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 350 megabytes
-    Info: Processing ended: Fri Jun 29 01:00:39 2018
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+Info (21057): Implemented 37 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
+    Info (21059): Implemented 6 output pins
+    Info (21061): Implemented 17 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 338 megabytes
+    Info: Processing ended: Fri Jun 29 21:54:53 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
 
 
