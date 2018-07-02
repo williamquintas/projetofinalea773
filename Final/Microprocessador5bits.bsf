@@ -1,0 +1,99 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 232 176)
+	(text "Microprocessador5bits" (rect 5 0 132 13)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 145 25 156)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "SEL[1..0]" (rect 0 0 51 13)(font "Arial" (font_size 8)))
+		(text "SEL[1..0]" (rect 21 27 72 40)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "RESET" (rect 0 0 42 13)(font "Arial" (font_size 8)))
+		(text "RESET" (rect 21 43 63 56)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "CLK" (rect 0 0 25 13)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 59 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "IN[4..0]" (rect 0 0 41 13)(font "Arial" (font_size 8)))
+		(text "IN[4..0]" (rect 21 75 62 88)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "FLAGS[3..0]" (rect 0 0 69 13)(font "Arial" (font_size 8)))
+		(text "FLAGS[3..0]" (rect 126 27 195 40)(font "Arial" (font_size 8)))
+		(line (pt 216 32)(pt 200 32)(line_width 3))
+	)
+	(port
+		(pt 216 48)
+		(output)
+		(text "INSTRUCTION[7..0]" (rect 0 0 114 13)(font "Arial" (font_size 8)))
+		(text "INSTRUCTION[7..0]" (rect 81 43 195 56)(font "Arial" (font_size 8)))
+		(line (pt 216 48)(pt 200 48)(line_width 3))
+	)
+	(port
+		(pt 216 64)
+		(output)
+		(text "DISPLAY1[7..0]" (rect 0 0 88 13)(font "Arial" (font_size 8)))
+		(text "DISPLAY1[7..0]" (rect 107 59 195 72)(font "Arial" (font_size 8)))
+		(line (pt 216 64)(pt 200 64)(line_width 3))
+	)
+	(port
+		(pt 216 80)
+		(output)
+		(text "DISPLAY2[7..0]" (rect 0 0 88 13)(font "Arial" (font_size 8)))
+		(text "DISPLAY2[7..0]" (rect 107 75 195 88)(font "Arial" (font_size 8)))
+		(line (pt 216 80)(pt 200 80)(line_width 3))
+	)
+	(port
+		(pt 216 96)
+		(output)
+		(text "DISPLAY3[7..0]" (rect 0 0 88 13)(font "Arial" (font_size 8)))
+		(text "DISPLAY3[7..0]" (rect 107 91 195 104)(font "Arial" (font_size 8)))
+		(line (pt 216 96)(pt 200 96)(line_width 3))
+	)
+	(port
+		(pt 216 112)
+		(output)
+		(text "DISPLAY4[7..0]" (rect 0 0 88 13)(font "Arial" (font_size 8)))
+		(text "DISPLAY4[7..0]" (rect 107 107 195 120)(font "Arial" (font_size 8)))
+		(line (pt 216 112)(pt 200 112)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 144))
+	)
+)

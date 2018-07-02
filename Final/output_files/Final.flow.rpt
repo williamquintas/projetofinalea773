@@ -1,5 +1,5 @@
 Flow report for Final
-Fri Jun 29 21:55:09 2018
+Mon Jul  2 00:31:11 2018
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Fri Jun 29 21:55:09 2018           ;
+; Flow Status                        ; Successful - Mon Jul  2 00:31:11 2018           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Final                                           ;
-; Top-level Entity Name              ; ParadaDesvio                                    ;
+; Top-level Entity Name              ; Final                                           ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C20F484C7                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 17 / 18,752 ( < 1 % )                           ;
-;     Total combinational functions  ; 17 / 18,752 ( < 1 % )                           ;
-;     Dedicated logic registers      ; 0 / 18,752 ( 0 % )                              ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 20 / 315 ( 6 % )                                ;
+; Total logic elements               ; 780 / 18,752 ( 4 % )                            ;
+;     Total combinational functions  ; 672 / 18,752 ( 4 % )                            ;
+;     Dedicated logic registers      ; 182 / 18,752 ( < 1 % )                          ;
+; Total registers                    ; 182                                             ;
+; Total pins                         ; 55 / 315 ( 17 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 239,616 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 52 ( 0 % )                                  ;
@@ -64,28 +64,30 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/29/2018 21:54:50 ;
+; Start date & time ; 07/02/2018 00:30:43 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Final               ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                             ;
-+-------------------------------------+------------------------+---------------+--------------+----------------+
-; Assignment Name                     ; Value                  ; Default Value ; Entity Name  ; Section Id     ;
-+-------------------------------------+------------------------+---------------+--------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.153032009003675      ; --            ; --           ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                   ; --            ; --           ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL) ; <None>        ; --           ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                     ; --            ; --           ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                      ; --            ; --           ; --             ;
-; PARTITION_COLOR                     ; 16764057               ; --            ; ParadaDesvio ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING  ; --            ; ParadaDesvio ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                 ; --            ; ParadaDesvio ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files           ; --            ; --           ; --             ;
-; TOP_LEVEL_ENTITY                    ; ParadaDesvio           ; Final         ; --           ; --             ;
-+-------------------------------------+------------------------+---------------+--------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                           ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 0.153050224303787                     ; --            ; --          ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                    ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -93,12 +95,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 338 MB              ; 00:00:01                           ;
-; Fitter                    ; 00:00:05     ; 1.0                     ; 435 MB              ; 00:00:04                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 338 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 296 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 303 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:11     ; --                      ; --                  ; 00:00:09                           ;
+; Analysis & Synthesis      ; 00:00:08     ; 1.0                     ; 348 MB              ; 00:00:07                           ;
+; Fitter                    ; 00:00:10     ; 1.0                     ; 442 MB              ; 00:00:10                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 342 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 305 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 310 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:22     ; --                      ; --                  ; 00:00:21                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

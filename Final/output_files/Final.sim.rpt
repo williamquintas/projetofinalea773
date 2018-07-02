@@ -1,0 +1,327 @@
+Simulator report for Final
+Mon Jul  2 00:17:05 2018
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 3.0 us       ;
+; Simulation Netlist Size     ; 163 nodes    ;
+; Simulation Coverage         ;      88.96 % ;
+; Total Number of Transitions ; 3281         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                                        ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                                      ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                                   ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                                         ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                                          ;               ;
+; Vector input source                                                                        ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/LogArit.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                                           ; On            ;
+; Check outputs                                                                              ; Off                                                                                          ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                                           ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                                           ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                                           ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                                           ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                                          ; Off           ;
+; Detect glitches                                                                            ; Off                                                                                          ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                                          ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                                          ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                                          ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                                          ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                                           ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                                   ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                                          ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                                          ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                                         ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 32-bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      88.96 % ;
+; Total nodes checked                                 ; 163          ;
+; Total output ports checked                          ; 163          ;
+; Total output ports with complete 1/0-value coverage ; 145          ;
+; Total output ports with no 1/0-value coverage       ; 1            ;
+; Total output ports with no 1-value coverage         ; 17           ;
+; Total output ports with no 0-value coverage         ; 2            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                          ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+; Node Name                                                                       ; Output Port Name                                                                ; Output Port Type ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+; |BlocoLogArit|FL[3]                                                             ; |BlocoLogArit|FL[3]                                                             ; pin_out          ;
+; |BlocoLogArit|FL[2]                                                             ; |BlocoLogArit|FL[2]                                                             ; pin_out          ;
+; |BlocoLogArit|FL[1]                                                             ; |BlocoLogArit|FL[1]                                                             ; pin_out          ;
+; |BlocoLogArit|FL[0]                                                             ; |BlocoLogArit|FL[0]                                                             ; pin_out          ;
+; |BlocoLogArit|inst99                                                            ; |BlocoLogArit|inst99                                                            ; out0             ;
+; |BlocoLogArit|INST[4]                                                           ; |BlocoLogArit|INST[4]                                                           ; out              ;
+; |BlocoLogArit|INST[3]                                                           ; |BlocoLogArit|INST[3]                                                           ; out              ;
+; |BlocoLogArit|INST[2]                                                           ; |BlocoLogArit|INST[2]                                                           ; out              ;
+; |BlocoLogArit|INST[1]                                                           ; |BlocoLogArit|INST[1]                                                           ; out              ;
+; |BlocoLogArit|INST[0]                                                           ; |BlocoLogArit|INST[0]                                                           ; out              ;
+; |BlocoLogArit|inst5                                                             ; |BlocoLogArit|inst5                                                             ; regout           ;
+; |BlocoLogArit|CLK                                                               ; |BlocoLogArit|CLK                                                               ; out              ;
+; |BlocoLogArit|inst500                                                           ; |BlocoLogArit|inst500                                                           ; out0             ;
+; |BlocoLogArit|inst300                                                           ; |BlocoLogArit|inst300                                                           ; out0             ;
+; |BlocoLogArit|inst26                                                            ; |BlocoLogArit|inst26                                                            ; out0             ;
+; |BlocoLogArit|inst13                                                            ; |BlocoLogArit|inst13                                                            ; out0             ;
+; |BlocoLogArit|inst11                                                            ; |BlocoLogArit|inst11                                                            ; out0             ;
+; |BlocoLogArit|inst12                                                            ; |BlocoLogArit|inst12                                                            ; out0             ;
+; |BlocoLogArit|ULAX[4]                                                           ; |BlocoLogArit|ULAX[4]                                                           ; out0             ;
+; |BlocoLogArit|ULAX[3]                                                           ; |BlocoLogArit|ULAX[3]                                                           ; out0             ;
+; |BlocoLogArit|ULAX[2]                                                           ; |BlocoLogArit|ULAX[2]                                                           ; out0             ;
+; |BlocoLogArit|ULAX[1]                                                           ; |BlocoLogArit|ULAX[1]                                                           ; out0             ;
+; |BlocoLogArit|ULAX[0]                                                           ; |BlocoLogArit|ULAX[0]                                                           ; out0             ;
+; |BlocoLogArit|inst57                                                            ; |BlocoLogArit|inst57                                                            ; out0             ;
+; |BlocoLogArit|inst48                                                            ; |BlocoLogArit|inst48                                                            ; out0             ;
+; |BlocoLogArit|inst31                                                            ; |BlocoLogArit|inst31                                                            ; out0             ;
+; |BlocoLogArit|inst98                                                            ; |BlocoLogArit|inst98                                                            ; out0             ;
+; |BlocoLogArit|inst52                                                            ; |BlocoLogArit|inst52                                                            ; out0             ;
+; |BlocoLogArit|inst28                                                            ; |BlocoLogArit|inst28                                                            ; out0             ;
+; |BlocoLogArit|inst56                                                            ; |BlocoLogArit|inst56                                                            ; out0             ;
+; |BlocoLogArit|inst24                                                            ; |BlocoLogArit|inst24                                                            ; out0             ;
+; |BlocoLogArit|inst51                                                            ; |BlocoLogArit|inst51                                                            ; out0             ;
+; |BlocoLogArit|inst29                                                            ; |BlocoLogArit|inst29                                                            ; out0             ;
+; |BlocoLogArit|A[4]                                                              ; |BlocoLogArit|A[4]                                                              ; out              ;
+; |BlocoLogArit|A[3]                                                              ; |BlocoLogArit|A[3]                                                              ; out              ;
+; |BlocoLogArit|A[2]                                                              ; |BlocoLogArit|A[2]                                                              ; out              ;
+; |BlocoLogArit|A[1]                                                              ; |BlocoLogArit|A[1]                                                              ; out              ;
+; |BlocoLogArit|A[0]                                                              ; |BlocoLogArit|A[0]                                                              ; out              ;
+; |BlocoLogArit|inst58                                                            ; |BlocoLogArit|inst58                                                            ; out0             ;
+; |BlocoLogArit|inst53                                                            ; |BlocoLogArit|inst53                                                            ; out0             ;
+; |BlocoLogArit|inst27                                                            ; |BlocoLogArit|inst27                                                            ; out0             ;
+; |BlocoLogArit|inst54                                                            ; |BlocoLogArit|inst54                                                            ; out0             ;
+; |BlocoLogArit|inst45                                                            ; |BlocoLogArit|inst45                                                            ; out0             ;
+; |BlocoLogArit|B[4]                                                              ; |BlocoLogArit|B[4]                                                              ; out              ;
+; |BlocoLogArit|B[3]                                                              ; |BlocoLogArit|B[3]                                                              ; out              ;
+; |BlocoLogArit|B[2]                                                              ; |BlocoLogArit|B[2]                                                              ; out              ;
+; |BlocoLogArit|B[1]                                                              ; |BlocoLogArit|B[1]                                                              ; out              ;
+; |BlocoLogArit|B[0]                                                              ; |BlocoLogArit|B[0]                                                              ; out              ;
+; |BlocoLogArit|inst55                                                            ; |BlocoLogArit|inst55                                                            ; out0             ;
+; |BlocoLogArit|inst40                                                            ; |BlocoLogArit|inst40                                                            ; out0             ;
+; |BlocoLogArit|ULAY[4]                                                           ; |BlocoLogArit|ULAY[4]                                                           ; out0             ;
+; |BlocoLogArit|ULAY[3]                                                           ; |BlocoLogArit|ULAY[3]                                                           ; out0             ;
+; |BlocoLogArit|ULAY[2]                                                           ; |BlocoLogArit|ULAY[2]                                                           ; out0             ;
+; |BlocoLogArit|ULAY[1]                                                           ; |BlocoLogArit|ULAY[1]                                                           ; out0             ;
+; |BlocoLogArit|ULAY[0]                                                           ; |BlocoLogArit|ULAY[0]                                                           ; out0             ;
+; |BlocoLogArit|inst59                                                            ; |BlocoLogArit|inst59                                                            ; out0             ;
+; |BlocoLogArit|inst60                                                            ; |BlocoLogArit|inst60                                                            ; out0             ;
+; |BlocoLogArit|OUT[4]                                                            ; |BlocoLogArit|OUT[4]                                                            ; pin_out          ;
+; |BlocoLogArit|OUT[3]                                                            ; |BlocoLogArit|OUT[3]                                                            ; pin_out          ;
+; |BlocoLogArit|OUT[2]                                                            ; |BlocoLogArit|OUT[2]                                                            ; pin_out          ;
+; |BlocoLogArit|OUT[1]                                                            ; |BlocoLogArit|OUT[1]                                                            ; pin_out          ;
+; |BlocoLogArit|OUT[0]                                                            ; |BlocoLogArit|OUT[0]                                                            ; pin_out          ;
+; |BlocoLogArit|saida[4]                                                          ; |BlocoLogArit|saida[4]                                                          ; out0             ;
+; |BlocoLogArit|saida[3]                                                          ; |BlocoLogArit|saida[3]                                                          ; out0             ;
+; |BlocoLogArit|saida[2]                                                          ; |BlocoLogArit|saida[2]                                                          ; out0             ;
+; |BlocoLogArit|saida[1]                                                          ; |BlocoLogArit|saida[1]                                                          ; out0             ;
+; |BlocoLogArit|saida[0]                                                          ; |BlocoLogArit|saida[0]                                                          ; out0             ;
+; |BlocoLogArit|inst44                                                            ; |BlocoLogArit|inst44                                                            ; out0             ;
+; |BlocoLogArit|inst46                                                            ; |BlocoLogArit|inst46                                                            ; out0             ;
+; |BlocoLogArit|inst36                                                            ; |BlocoLogArit|inst36                                                            ; out0             ;
+; |BlocoLogArit|inst41                                                            ; |BlocoLogArit|inst41                                                            ; out0             ;
+; |BlocoLogArit|inst37                                                            ; |BlocoLogArit|inst37                                                            ; out0             ;
+; |BlocoLogArit|inst38                                                            ; |BlocoLogArit|inst38                                                            ; out0             ;
+; |BlocoLogArit|inst39                                                            ; |BlocoLogArit|inst39                                                            ; out0             ;
+; |BlocoLogArit|Tristate5bits:inst43|inst2                                        ; |BlocoLogArit|Tristate5bits:inst43|inst2                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst43|inst3                                        ; |BlocoLogArit|Tristate5bits:inst43|inst3                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst43|inst4                                        ; |BlocoLogArit|Tristate5bits:inst43|inst4                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst43|inst5                                        ; |BlocoLogArit|Tristate5bits:inst43|inst5                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst43|inst6                                        ; |BlocoLogArit|Tristate5bits:inst43|inst6                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst42|inst2                                        ; |BlocoLogArit|Tristate5bits:inst42|inst2                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst42|inst3                                        ; |BlocoLogArit|Tristate5bits:inst42|inst3                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst42|inst4                                        ; |BlocoLogArit|Tristate5bits:inst42|inst4                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst42|inst5                                        ; |BlocoLogArit|Tristate5bits:inst42|inst5                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst42|inst6                                        ; |BlocoLogArit|Tristate5bits:inst42|inst6                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst22|inst2                                        ; |BlocoLogArit|Tristate5bits:inst22|inst2                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst22|inst3                                        ; |BlocoLogArit|Tristate5bits:inst22|inst3                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst22|inst4                                        ; |BlocoLogArit|Tristate5bits:inst22|inst4                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst22|inst5                                        ; |BlocoLogArit|Tristate5bits:inst22|inst5                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst22|inst6                                        ; |BlocoLogArit|Tristate5bits:inst22|inst6                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst16|inst2                                        ; |BlocoLogArit|Tristate5bits:inst16|inst2                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst16|inst3                                        ; |BlocoLogArit|Tristate5bits:inst16|inst3                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst16|inst4                                        ; |BlocoLogArit|Tristate5bits:inst16|inst4                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst16|inst5                                        ; |BlocoLogArit|Tristate5bits:inst16|inst5                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst16|inst6                                        ; |BlocoLogArit|Tristate5bits:inst16|inst6                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst15|inst2                                        ; |BlocoLogArit|Tristate5bits:inst15|inst2                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst15|inst3                                        ; |BlocoLogArit|Tristate5bits:inst15|inst3                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst15|inst4                                        ; |BlocoLogArit|Tristate5bits:inst15|inst4                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst15|inst5                                        ; |BlocoLogArit|Tristate5bits:inst15|inst5                                        ; out              ;
+; |BlocoLogArit|Tristate5bits:inst15|inst6                                        ; |BlocoLogArit|Tristate5bits:inst15|inst6                                        ; out              ;
+; |BlocoLogArit|ULA:ula|inst4                                                     ; |BlocoLogArit|ULA:ula|inst4                                                     ; out0             ;
+; |BlocoLogArit|ULA:ula|Complementa:inst1|inst                                    ; |BlocoLogArit|ULA:ula|Complementa:inst1|inst                                    ; out0             ;
+; |BlocoLogArit|ULA:ula|Complementa:inst1|inst1                                   ; |BlocoLogArit|ULA:ula|Complementa:inst1|inst1                                   ; out0             ;
+; |BlocoLogArit|ULA:ula|Complementa:inst1|inst2                                   ; |BlocoLogArit|ULA:ula|Complementa:inst1|inst2                                   ; out0             ;
+; |BlocoLogArit|ULA:ula|Complementa:inst1|inst3                                   ; |BlocoLogArit|ULA:ula|Complementa:inst1|inst3                                   ; out0             ;
+; |BlocoLogArit|ULA:ula|Complementa:inst1|inst4                                   ; |BlocoLogArit|ULA:ula|Complementa:inst1|inst4                                   ; out0             ;
+; |BlocoLogArit|ULA:ula|Zera:inst5|inst                                           ; |BlocoLogArit|ULA:ula|Zera:inst5|inst                                           ; out0             ;
+; |BlocoLogArit|ULA:ula|Zera:inst5|inst1                                          ; |BlocoLogArit|ULA:ula|Zera:inst5|inst1                                          ; out0             ;
+; |BlocoLogArit|ULA:ula|Zera:inst5|inst2                                          ; |BlocoLogArit|ULA:ula|Zera:inst5|inst2                                          ; out0             ;
+; |BlocoLogArit|ULA:ula|Zera:inst5|inst3                                          ; |BlocoLogArit|ULA:ula|Zera:inst5|inst3                                          ; out0             ;
+; |BlocoLogArit|ULA:ula|Zera:inst5|inst4                                          ; |BlocoLogArit|ULA:ula|Zera:inst5|inst4                                          ; out0             ;
+; |BlocoLogArit|ULA:ula|Complementa:inst|inst                                     ; |BlocoLogArit|ULA:ula|Complementa:inst|inst                                     ; out0             ;
+; |BlocoLogArit|ULA:ula|Complementa:inst|inst1                                    ; |BlocoLogArit|ULA:ula|Complementa:inst|inst1                                    ; out0             ;
+; |BlocoLogArit|ULA:ula|Complementa:inst|inst2                                    ; |BlocoLogArit|ULA:ula|Complementa:inst|inst2                                    ; out0             ;
+; |BlocoLogArit|ULA:ula|Complementa:inst|inst3                                    ; |BlocoLogArit|ULA:ula|Complementa:inst|inst3                                    ; out0             ;
+; |BlocoLogArit|ULA:ula|Complementa:inst|inst4                                    ; |BlocoLogArit|ULA:ula|Complementa:inst|inst4                                    ; out0             ;
+; |BlocoLogArit|ULA:ula|Decodificador:inst3|inst2                                 ; |BlocoLogArit|ULA:ula|Decodificador:inst3|inst2                                 ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|inst1                                          ; |BlocoLogArit|ULA:ula|Soma:inst2|inst1                                          ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|inst9                                          ; |BlocoLogArit|ULA:ula|Soma:inst2|inst9                                          ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|inst8                                          ; |BlocoLogArit|ULA:ula|Soma:inst2|inst8                                          ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|inst7                                          ; |BlocoLogArit|ULA:ula|Soma:inst2|inst7                                          ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst|inst2                     ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst|inst2                     ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst|MeioSomador:inst1|inst    ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst|MeioSomador:inst1|inst    ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst|MeioSomador:inst1|inst1   ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst|MeioSomador:inst1|inst1   ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst|MeioSomador:inst|inst     ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst|MeioSomador:inst|inst     ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst|MeioSomador:inst|inst1    ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst|MeioSomador:inst|inst1    ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst4|inst2                    ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst4|inst2                    ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst4|MeioSomador:inst1|inst   ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst4|MeioSomador:inst1|inst   ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst4|MeioSomador:inst1|inst1  ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst4|MeioSomador:inst1|inst1  ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst4|MeioSomador:inst|inst    ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst4|MeioSomador:inst|inst    ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst4|MeioSomador:inst|inst1   ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst4|MeioSomador:inst|inst1   ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst5|inst2                    ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst5|inst2                    ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst5|MeioSomador:inst1|inst   ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst5|MeioSomador:inst1|inst   ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst5|MeioSomador:inst1|inst1  ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst5|MeioSomador:inst1|inst1  ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst5|MeioSomador:inst|inst    ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst5|MeioSomador:inst|inst    ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst5|MeioSomador:inst|inst1   ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst5|MeioSomador:inst|inst1   ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst13|inst2                   ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst13|inst2                   ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst13|MeioSomador:inst1|inst  ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst13|MeioSomador:inst1|inst  ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst13|MeioSomador:inst1|inst1 ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst13|MeioSomador:inst1|inst1 ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst13|MeioSomador:inst|inst   ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst13|MeioSomador:inst|inst   ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst13|MeioSomador:inst|inst1  ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst13|MeioSomador:inst|inst1  ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst6|inst2                    ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst6|inst2                    ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst6|MeioSomador:inst1|inst   ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst6|MeioSomador:inst1|inst   ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst6|MeioSomador:inst1|inst1  ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst6|MeioSomador:inst1|inst1  ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst6|MeioSomador:inst|inst    ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst6|MeioSomador:inst|inst    ; out0             ;
+; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst6|MeioSomador:inst|inst1   ; |BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst6|MeioSomador:inst|inst1   ; out0             ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                               ;
++------------------------------------------+------------------------------------------+------------------+
+; Node Name                                ; Output Port Name                         ; Output Port Type ;
++------------------------------------------+------------------------------------------+------------------+
+; |BlocoLogArit|inst49                     ; |BlocoLogArit|inst49                     ; out0             ;
+; |BlocoLogArit|inst30                     ; |BlocoLogArit|inst30                     ; out0             ;
+; |BlocoLogArit|inst50                     ; |BlocoLogArit|inst50                     ; out0             ;
+; |BlocoLogArit|Tristate5bits:inst34|inst2 ; |BlocoLogArit|Tristate5bits:inst34|inst2 ; out              ;
+; |BlocoLogArit|Tristate5bits:inst34|inst3 ; |BlocoLogArit|Tristate5bits:inst34|inst3 ; out              ;
+; |BlocoLogArit|Tristate5bits:inst34|inst4 ; |BlocoLogArit|Tristate5bits:inst34|inst4 ; out              ;
+; |BlocoLogArit|Tristate5bits:inst34|inst5 ; |BlocoLogArit|Tristate5bits:inst34|inst5 ; out              ;
+; |BlocoLogArit|Tristate5bits:inst34|inst6 ; |BlocoLogArit|Tristate5bits:inst34|inst6 ; out              ;
+; |BlocoLogArit|Tristate5bits:inst33|inst2 ; |BlocoLogArit|Tristate5bits:inst33|inst2 ; out              ;
+; |BlocoLogArit|Tristate5bits:inst33|inst3 ; |BlocoLogArit|Tristate5bits:inst33|inst3 ; out              ;
+; |BlocoLogArit|Tristate5bits:inst33|inst4 ; |BlocoLogArit|Tristate5bits:inst33|inst4 ; out              ;
+; |BlocoLogArit|Tristate5bits:inst33|inst5 ; |BlocoLogArit|Tristate5bits:inst33|inst5 ; out              ;
+; |BlocoLogArit|Tristate5bits:inst17|inst2 ; |BlocoLogArit|Tristate5bits:inst17|inst2 ; out              ;
+; |BlocoLogArit|Tristate5bits:inst17|inst3 ; |BlocoLogArit|Tristate5bits:inst17|inst3 ; out              ;
+; |BlocoLogArit|Tristate5bits:inst17|inst4 ; |BlocoLogArit|Tristate5bits:inst17|inst4 ; out              ;
+; |BlocoLogArit|Tristate5bits:inst17|inst5 ; |BlocoLogArit|Tristate5bits:inst17|inst5 ; out              ;
+; |BlocoLogArit|Tristate5bits:inst17|inst6 ; |BlocoLogArit|Tristate5bits:inst17|inst6 ; out              ;
++------------------------------------------+------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                               ;
++------------------------------------------+------------------------------------------+------------------+
+; Node Name                                ; Output Port Name                         ; Output Port Type ;
++------------------------------------------+------------------------------------------+------------------+
+; |BlocoLogArit|inst49                     ; |BlocoLogArit|inst49                     ; out0             ;
+; |BlocoLogArit|Tristate5bits:inst33|inst6 ; |BlocoLogArit|Tristate5bits:inst33|inst6 ; out              ;
++------------------------------------------+------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Jul  2 00:17:05 2018
+Info: Command: quartus_sim --simulation_results_format=VWF Final -c Final
+Info (324025): Using vector source file "/net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/LogArit.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning (324036): Found clock-sensitive change during active clock edge at time 350.0 ns on register "|BlocoLogArit|inst5"
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      88.96 %
+Info (328052): Number of transitions in simulation is 3281
+Info (324045): Vector file Final.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 32-bit Simulator was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 276 megabytes
+    Info: Processing ended: Mon Jul  2 00:17:05 2018
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
