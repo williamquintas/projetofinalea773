@@ -12465,11 +12465,6 @@ applicable agreement for further details.
 	(pt 1344 800)
 )
 (connector
-	(text "0" (rect 1330 1108 1337 1118)(font "Arial" ))
-	(pt 1328 1124)
-	(pt 1344 1124)
-)
-(connector
 	(text "1" (rect 1330 2544 1335 2554)(font "Arial" ))
 	(pt 1328 2560)
 	(pt 1344 2560)
@@ -12700,11 +12695,6 @@ applicable agreement for further details.
 	(pt 1168 1124)
 )
 (connector
-	(text "1" (rect 1154 1180 1159 1190)(font "Arial" ))
-	(pt 1152 1196)
-	(pt 1168 1196)
-)
-(connector
 	(text "0" (rect 1242 784 1249 794)(font "Arial" ))
 	(pt 1240 800)
 	(pt 1256 800)
@@ -12790,19 +12780,9 @@ applicable agreement for further details.
 	(pt 1832 1340)
 )
 (connector
-	(text "0" (rect 1506 1252 1513 1262)(font "Arial" ))
-	(pt 1504 1268)
-	(pt 1520 1268)
-)
-(connector
 	(text "0" (rect 1714 1252 1721 1262)(font "Arial" ))
 	(pt 1704 1268)
 	(pt 1728 1268)
-)
-(connector
-	(text "0" (rect 1602 1180 1609 1190)(font "Arial" ))
-	(pt 1616 1196)
-	(pt 1592 1196)
 )
 (connector
 	(text "1" (rect 1818 424 1823 434)(font "Arial" ))
@@ -12873,11 +12853,6 @@ applicable agreement for further details.
 	(text "0" (rect 1154 1036 1161 1046)(font "Arial" ))
 	(pt 1152 1052)
 	(pt 1168 1052)
-)
-(connector
-	(text "0" (rect 1154 1252 1161 1262)(font "Arial" ))
-	(pt 1152 1268)
-	(pt 1168 1268)
 )
 (connector
 	(text "0" (rect 1154 1324 1161 1334)(font "Arial" ))
@@ -13000,11 +12975,6 @@ applicable agreement for further details.
 	(pt 1344 1196)
 )
 (connector
-	(text "0" (rect 1330 1252 1337 1262)(font "Arial" ))
-	(pt 1328 1268)
-	(pt 1344 1268)
-)
-(connector
 	(text "0" (rect 1330 1324 1337 1334)(font "Arial" ))
 	(pt 1328 1340)
 	(pt 1344 1340)
@@ -13088,11 +13058,6 @@ applicable agreement for further details.
 	(text "0" (rect 1418 1036 1425 1046)(font "Arial" ))
 	(pt 1416 1052)
 	(pt 1432 1052)
-)
-(connector
-	(text "1" (rect 1418 1252 1423 1262)(font "Arial" ))
-	(pt 1416 1268)
-	(pt 1432 1268)
 )
 (connector
 	(text "1" (rect 1418 1324 1423 1334)(font "Arial" ))
@@ -13435,11 +13400,6 @@ applicable agreement for further details.
 	(pt 1832 1052)
 )
 (connector
-	(text "1" (rect 1818 1252 1823 1262)(font "Arial" ))
-	(pt 1808 1268)
-	(pt 1832 1268)
-)
-(connector
 	(text "1" (rect 1818 1468 1823 1478)(font "Arial" ))
 	(pt 1808 1484)
 	(pt 1832 1484)
@@ -13475,14 +13435,54 @@ applicable agreement for further details.
 	(pt 1832 2488)
 )
 (connector
-	(text "1" (rect 1818 1180 1823 1190)(font "Arial" ))
+	(text "0" (rect 1714 1180 1721 1190)(font "Arial" ))
+	(pt 1704 1196)
+	(pt 1728 1196)
+)
+(connector
+	(text "1" (rect 1330 1108 1335 1118)(font "Arial" ))
+	(pt 1328 1124)
+	(pt 1344 1124)
+)
+(connector
+	(text "0" (rect 1154 1180 1161 1190)(font "Arial" ))
+	(pt 1152 1196)
+	(pt 1168 1196)
+)
+(connector
+	(text "0" (rect 1818 1180 1825 1190)(font "Arial" ))
 	(pt 1808 1196)
 	(pt 1832 1196)
 )
 (connector
-	(text "0" (rect 1714 1180 1721 1190)(font "Arial" ))
-	(pt 1704 1196)
-	(pt 1728 1196)
+	(text "1" (rect 1602 1180 1607 1190)(font "Arial" ))
+	(pt 1616 1196)
+	(pt 1592 1196)
+)
+(connector
+	(text "1" (rect 1154 1252 1159 1262)(font "Arial" ))
+	(pt 1152 1268)
+	(pt 1168 1268)
+)
+(connector
+	(text "1" (rect 1330 1252 1335 1262)(font "Arial" ))
+	(pt 1328 1268)
+	(pt 1344 1268)
+)
+(connector
+	(text "0" (rect 1418 1252 1425 1262)(font "Arial" ))
+	(pt 1416 1268)
+	(pt 1432 1268)
+)
+(connector
+	(text "1" (rect 1506 1252 1511 1262)(font "Arial" ))
+	(pt 1504 1268)
+	(pt 1520 1268)
+)
+(connector
+	(text "0" (rect 1818 1252 1825 1262)(font "Arial" ))
+	(pt 1808 1268)
+	(pt 1832 1268)
 )
 (junction (pt 1672 800))
 (junction (pt 1672 872))
