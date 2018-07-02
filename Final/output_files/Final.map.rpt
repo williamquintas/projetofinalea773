@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Final
-Mon Jul  2 00:30:51 2018
+Mon Jul  2 03:36:45 2018
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -42,13 +42,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jul  2 00:30:51 2018           ;
+; Analysis & Synthesis Status        ; Successful - Mon Jul  2 03:36:45 2018           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Final                                           ;
 ; Top-level Entity Name              ; Final                                           ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 827                                             ;
-;     Total combinational functions  ; 672                                             ;
+; Total logic elements               ; 900                                             ;
+;     Total combinational functions  ; 745                                             ;
 ;     Dedicated logic registers      ; 182                                             ;
 ; Total registers                    ; 182                                             ;
 ; Total pins                         ; 55                                              ;
@@ -155,38 +155,39 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                 ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
-; Final.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/Final.bdf                   ;         ;
-; Zera.bdf                         ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/Zera.bdf                    ;         ;
-; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/ULA.bdf                     ;         ;
-; Tristate5bits.bdf                ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/Tristate5bits.bdf           ;         ;
-; SomadorCompleto.bdf              ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/SomadorCompleto.bdf         ;         ;
-; Soma.bdf                         ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/Soma.bdf                    ;         ;
-; SeletorDeProgramas.bdf           ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/SeletorDeProgramas.bdf      ;         ;
-; Registrador5bits.bdf             ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/Registrador5bits.bdf        ;         ;
-; PC.bdf                           ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/PC.bdf                      ;         ;
-; ParadaDesvio.bdf                 ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/ParadaDesvio.bdf            ;         ;
-; Microprocessador5bits.bdf        ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/Microprocessador5bits.bdf   ;         ;
-; MemoriaROM.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/MemoriaROM.bdf              ;         ;
-; MemoriaRAM.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/MemoriaRAM.bdf              ;         ;
-; MeioSomador.bdf                  ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/MeioSomador.bdf             ;         ;
-; LinhaDeRAM.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/LinhaDeRAM.bdf              ;         ;
-; Displays.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/Displays.bdf                ;         ;
-; Display5bits.bdf                 ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/Display5bits.bdf            ;         ;
-; DecodificadorDeEndereco.bdf      ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/DecodificadorDeEndereco.bdf ;         ;
-; Decodificador.bdf                ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/Decodificador.bdf           ;         ;
-; Contador3Bits.bdf                ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/Contador3Bits.bdf           ;         ;
-; Complementa.bdf                  ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/Complementa.bdf             ;         ;
-; CelulaRAM.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/CelulaRAM.bdf               ;         ;
-; Carregamento.bdf                 ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/Carregamento.bdf            ;         ;
-; BlocoLogArit.bdf                 ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/BlocoLogArit.bdf            ;         ;
-; ProgramaFEEC.bdf                 ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/ProgramaFEEC.bdf            ;         ;
-; PreparacaoProgramaFEEC.bdf       ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/ProjetoFinal/Final/PreparacaoProgramaFEEC.bdf  ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                      ; Library ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
+; Final.bdf                        ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/Final.bdf                   ;         ;
+; Zera.bdf                         ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/Zera.bdf                    ;         ;
+; ULA.bdf                          ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/ULA.bdf                     ;         ;
+; Tristate5bits.bdf                ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/Tristate5bits.bdf           ;         ;
+; SomadorCompleto.bdf              ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/SomadorCompleto.bdf         ;         ;
+; Soma.bdf                         ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/Soma.bdf                    ;         ;
+; SeletorDeProgramas.bdf           ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/SeletorDeProgramas.bdf      ;         ;
+; Registrador5bits.bdf             ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/Registrador5bits.bdf        ;         ;
+; PC.bdf                           ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/PC.bdf                      ;         ;
+; ParadaDesvio.bdf                 ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/ParadaDesvio.bdf            ;         ;
+; Microprocessador5bits.bdf        ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/Microprocessador5bits.bdf   ;         ;
+; MemoriaRAM.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/MemoriaRAM.bdf              ;         ;
+; MeioSomador.bdf                  ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/MeioSomador.bdf             ;         ;
+; LinhaDeRAM.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/LinhaDeRAM.bdf              ;         ;
+; Displays.bdf                     ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/Displays.bdf                ;         ;
+; Display5bits.bdf                 ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/Display5bits.bdf            ;         ;
+; DecodificadorDeEndereco.bdf      ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/DecodificadorDeEndereco.bdf ;         ;
+; Decodificador.bdf                ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/Decodificador.bdf           ;         ;
+; Contador3Bits.bdf                ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/Contador3Bits.bdf           ;         ;
+; Complementa.bdf                  ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/Complementa.bdf             ;         ;
+; CelulaRAM.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/CelulaRAM.bdf               ;         ;
+; Carregamento.bdf                 ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/Carregamento.bdf            ;         ;
+; BlocoLogArit.bdf                 ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/BlocoLogArit.bdf            ;         ;
+; ProgramaFEEC.bdf                 ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/ProgramaFEEC.bdf            ;         ;
+; PreparacaoProgramaFEEC.bdf       ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/PreparacaoProgramaFEEC.bdf  ;         ;
+; ProgramaRAM.bdf                  ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/ProgramaRAM.bdf             ;         ;
+; ProgramaFibonacci.bdf            ; yes             ; User Block Diagram/Schematic File  ; /net/nfs1.fee.unicamp.br/export/vol1/home/EC16/ra188684/ea773/projetofinalea773/Final/ProgramaFibonacci.bdf       ;         ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------+
@@ -194,16 +195,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------+
 ; Resource                                    ; Usage  ;
 +---------------------------------------------+--------+
-; Estimated Total logic elements              ; 827    ;
+; Estimated Total logic elements              ; 900    ;
 ;                                             ;        ;
-; Total combinational functions               ; 672    ;
+; Total combinational functions               ; 745    ;
 ; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 551    ;
-;     -- 3 input functions                    ; 83     ;
-;     -- <=2 input functions                  ; 38     ;
+;     -- 4 input functions                    ; 592    ;
+;     -- 3 input functions                    ; 110    ;
+;     -- <=2 input functions                  ; 43     ;
 ;                                             ;        ;
 ; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 672    ;
+;     -- normal mode                          ; 745    ;
 ;     -- arithmetic mode                      ; 0      ;
 ;                                             ;        ;
 ; Total registers                             ; 182    ;
@@ -214,8 +215,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0      ;
 ; Maximum fan-out node                        ; KEY[3] ;
 ; Maximum fan-out                             ; 182    ;
-; Total fan-out                               ; 3101   ;
-; Average fan-out                             ; 3.41   ;
+; Total fan-out                               ; 3356   ;
+; Average fan-out                             ; 3.42   ;
 +---------------------------------------------+--------+
 
 
@@ -224,10 +225,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                 ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                     ; Library Name ;
 +--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+--------------+
-; |Final                                     ; 672 (0)           ; 182 (0)      ; 0           ; 0            ; 0       ; 0         ; 55   ; 0            ; |Final                                                                                                                  ; work         ;
-;    |Microprocessador5bits:inst|            ; 672 (11)          ; 182 (1)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst                                                                                       ; work         ;
-;       |BlocoLogArit:BlocoLogArit|          ; 47 (21)           ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|BlocoLogArit:BlocoLogArit                                                             ; work         ;
-;          |ULA:ula|                         ; 26 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|BlocoLogArit:BlocoLogArit|ULA:ula                                                     ; work         ;
+; |Final                                     ; 745 (0)           ; 182 (0)      ; 0           ; 0            ; 0       ; 0         ; 55   ; 0            ; |Final                                                                                                                  ; work         ;
+;    |Microprocessador5bits:inst|            ; 745 (10)          ; 182 (1)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst                                                                                       ; work         ;
+;       |BlocoLogArit:BlocoLogArit|          ; 53 (28)           ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|BlocoLogArit:BlocoLogArit                                                             ; work         ;
+;          |ULA:ula|                         ; 25 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|BlocoLogArit:BlocoLogArit|ULA:ula                                                     ; work         ;
 ;             |Decodificador:inst3|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|BlocoLogArit:BlocoLogArit|ULA:ula|Decodificador:inst3                                 ; work         ;
 ;             |Soma:inst2|                   ; 15 (3)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|BlocoLogArit:BlocoLogArit|ULA:ula|Soma:inst2                                          ; work         ;
 ;                |SomadorCompleto:inst13|    ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|BlocoLogArit:BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst13                   ; work         ;
@@ -241,18 +242,18 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                   |MeioSomador:inst|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|BlocoLogArit:BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst6|MeioSomador:inst   ; work         ;
 ;                |SomadorCompleto:inst|      ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|BlocoLogArit:BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst                     ; work         ;
 ;                   |MeioSomador:inst|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|BlocoLogArit:BlocoLogArit|ULA:ula|Soma:inst2|SomadorCompleto:inst|MeioSomador:inst    ; work         ;
-;             |Zera:inst5|                   ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|BlocoLogArit:BlocoLogArit|ULA:ula|Zera:inst5                                          ; work         ;
-;       |Carregamento:BlocoCarregamento|     ; 22 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|Carregamento:BlocoCarregamento                                                        ; work         ;
+;             |Zera:inst5|                   ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|BlocoLogArit:BlocoLogArit|ULA:ula|Zera:inst5                                          ; work         ;
+;       |Carregamento:BlocoCarregamento|     ; 35 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|Carregamento:BlocoCarregamento                                                        ; work         ;
 ;          |Tristate5bits:inst11|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|Carregamento:BlocoCarregamento|Tristate5bits:inst11                                   ; work         ;
-;          |Tristate5bits:inst13|            ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|Carregamento:BlocoCarregamento|Tristate5bits:inst13                                   ; work         ;
-;          |Tristate5bits:inst7|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|Carregamento:BlocoCarregamento|Tristate5bits:inst7                                    ; work         ;
+;          |Tristate5bits:inst13|            ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|Carregamento:BlocoCarregamento|Tristate5bits:inst13                                   ; work         ;
+;          |Tristate5bits:inst7|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|Carregamento:BlocoCarregamento|Tristate5bits:inst7                                    ; work         ;
 ;       |Display5bits:inst13|                ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|Display5bits:inst13                                                                   ; work         ;
 ;       |Display5bits:inst14|                ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|Display5bits:inst14                                                                   ; work         ;
 ;       |Display5bits:inst15|                ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|Display5bits:inst15                                                                   ; work         ;
 ;       |Display5bits:inst16|                ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|Display5bits:inst16                                                                   ; work         ;
 ;       |Displays:ControleDeDisplays|        ; 211 (211)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|Displays:ControleDeDisplays                                                           ; work         ;
-;       |MemoriaRAM:RAM|                     ; 180 (0)           ; 160 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|MemoriaRAM:RAM                                                                        ; work         ;
-;          |DecodificadorDeEndereco:inst21|  ; 42 (42)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|MemoriaRAM:RAM|DecodificadorDeEndereco:inst21                                         ; work         ;
+;       |MemoriaRAM:RAM|                     ; 185 (0)           ; 160 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|MemoriaRAM:RAM                                                                        ; work         ;
+;          |DecodificadorDeEndereco:inst21|  ; 45 (45)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|MemoriaRAM:RAM|DecodificadorDeEndereco:inst21                                         ; work         ;
 ;          |LinhaDeRAM:inst23|               ; 1 (1)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|MemoriaRAM:RAM|LinhaDeRAM:inst23                                                      ; work         ;
 ;             |CelulaRAM:inst10|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|MemoriaRAM:RAM|LinhaDeRAM:inst23|CelulaRAM:inst10                                     ; work         ;
 ;             |CelulaRAM:inst6|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|MemoriaRAM:RAM|LinhaDeRAM:inst23|CelulaRAM:inst6                                      ; work         ;
@@ -439,32 +440,34 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |CelulaRAM:inst7|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|MemoriaRAM:RAM|LinhaDeRAM:inst53|CelulaRAM:inst7                                      ; work         ;
 ;             |CelulaRAM:inst8|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|MemoriaRAM:RAM|LinhaDeRAM:inst53|CelulaRAM:inst8                                      ; work         ;
 ;             |CelulaRAM:inst9|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|MemoriaRAM:RAM|LinhaDeRAM:inst53|CelulaRAM:inst9                                      ; work         ;
-;          |LinhaDeRAM:inst|                 ; 107 (107)         ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|MemoriaRAM:RAM|LinhaDeRAM:inst                                                        ; work         ;
+;          |LinhaDeRAM:inst|                 ; 109 (109)         ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|MemoriaRAM:RAM|LinhaDeRAM:inst                                                        ; work         ;
 ;             |CelulaRAM:inst10|             ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|MemoriaRAM:RAM|LinhaDeRAM:inst|CelulaRAM:inst10                                       ; work         ;
 ;             |CelulaRAM:inst6|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|MemoriaRAM:RAM|LinhaDeRAM:inst|CelulaRAM:inst6                                        ; work         ;
 ;             |CelulaRAM:inst7|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|MemoriaRAM:RAM|LinhaDeRAM:inst|CelulaRAM:inst7                                        ; work         ;
 ;             |CelulaRAM:inst8|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|MemoriaRAM:RAM|LinhaDeRAM:inst|CelulaRAM:inst8                                        ; work         ;
 ;             |CelulaRAM:inst9|              ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|MemoriaRAM:RAM|LinhaDeRAM:inst|CelulaRAM:inst9                                        ; work         ;
-;       |PC:ProgramCounter|                  ; 16 (2)            ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|PC:ProgramCounter                                                                     ; work         ;
+;       |PC:ProgramCounter|                  ; 14 (1)            ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|PC:ProgramCounter                                                                     ; work         ;
 ;          |Contador3Bits:inst1|             ; 7 (7)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|PC:ProgramCounter|Contador3Bits:inst1                                                 ; work         ;
-;          |Contador3Bits:inst|              ; 7 (7)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|PC:ProgramCounter|Contador3Bits:inst                                                  ; work         ;
-;       |ParadaDesvio:BlocoParadaDesvio|     ; 11 (7)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|ParadaDesvio:BlocoParadaDesvio                                                        ; work         ;
-;          |Soma:Somador|                    ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|ParadaDesvio:BlocoParadaDesvio|Soma:Somador                                           ; work         ;
+;          |Contador3Bits:inst|              ; 6 (6)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|PC:ProgramCounter|Contador3Bits:inst                                                  ; work         ;
+;       |ParadaDesvio:BlocoParadaDesvio|     ; 12 (6)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|ParadaDesvio:BlocoParadaDesvio                                                        ; work         ;
+;          |Soma:Somador|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|ParadaDesvio:BlocoParadaDesvio|Soma:Somador                                           ; work         ;
 ;             |SomadorCompleto:inst13|       ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|ParadaDesvio:BlocoParadaDesvio|Soma:Somador|SomadorCompleto:inst13                    ; work         ;
 ;                |MeioSomador:inst|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|ParadaDesvio:BlocoParadaDesvio|Soma:Somador|SomadorCompleto:inst13|MeioSomador:inst   ; work         ;
-;             |SomadorCompleto:inst4|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|ParadaDesvio:BlocoParadaDesvio|Soma:Somador|SomadorCompleto:inst4                     ; work         ;
-;             |SomadorCompleto:inst5|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|ParadaDesvio:BlocoParadaDesvio|Soma:Somador|SomadorCompleto:inst5                     ; work         ;
-;       |Registrador5bits:RegAc|             ; 12 (12)           ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|Registrador5bits:RegAc                                                                ; work         ;
-;       |Registrador5bits:RegA|              ; 17 (17)           ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|Registrador5bits:RegA                                                                 ; work         ;
+;             |SomadorCompleto:inst4|        ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|ParadaDesvio:BlocoParadaDesvio|Soma:Somador|SomadorCompleto:inst4                     ; work         ;
+;                |MeioSomador:inst|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|ParadaDesvio:BlocoParadaDesvio|Soma:Somador|SomadorCompleto:inst4|MeioSomador:inst    ; work         ;
+;             |SomadorCompleto:inst5|        ; 3 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|ParadaDesvio:BlocoParadaDesvio|Soma:Somador|SomadorCompleto:inst5                     ; work         ;
+;                |MeioSomador:inst|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|ParadaDesvio:BlocoParadaDesvio|Soma:Somador|SomadorCompleto:inst5|MeioSomador:inst    ; work         ;
+;       |Registrador5bits:RegAc|             ; 15 (15)           ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|Registrador5bits:RegAc                                                                ; work         ;
+;       |Registrador5bits:RegA|              ; 24 (24)           ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|Registrador5bits:RegA                                                                 ; work         ;
 ;       |Registrador5bits:RegB|              ; 5 (5)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|Registrador5bits:RegB                                                                 ; work         ;
-;       |SeletorDeProgramas:inst34|          ; 73 (49)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|SeletorDeProgramas:inst34                                                             ; work         ;
-;          |MemoriaROM:inst3|                ; 4 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst3                                            ; work         ;
-;             |DecodificadorDeEndereco:inst| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst3|DecodificadorDeEndereco:inst               ; work         ;
-;          |MemoriaROM:inst4|                ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst4                                            ; work         ;
-;             |DecodificadorDeEndereco:inst| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst4|DecodificadorDeEndereco:inst               ; work         ;
-;          |PreparacaoProgramaFEEC:inst1|    ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|SeletorDeProgramas:inst34|PreparacaoProgramaFEEC:inst1                                ; work         ;
-;             |DecodificadorDeEndereco:inst| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|SeletorDeProgramas:inst34|PreparacaoProgramaFEEC:inst1|DecodificadorDeEndereco:inst   ; work         ;
-;          |ProgramaFEEC:inst|               ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFEEC:inst                                           ; work         ;
+;       |SeletorDeProgramas:inst34|          ; 114 (89)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|SeletorDeProgramas:inst34                                                             ; work         ;
+;          |PreparacaoProgramaFEEC:inst1|    ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|SeletorDeProgramas:inst34|PreparacaoProgramaFEEC:inst1                                ; work         ;
+;             |DecodificadorDeEndereco:inst| ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|SeletorDeProgramas:inst34|PreparacaoProgramaFEEC:inst1|DecodificadorDeEndereco:inst   ; work         ;
+;          |ProgramaFEEC:inst|               ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFEEC:inst                                           ; work         ;
+;          |ProgramaFibonacci:inst3|         ; 10 (7)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFibonacci:inst3                                     ; work         ;
+;             |DecodificadorDeEndereco:inst| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFibonacci:inst3|DecodificadorDeEndereco:inst        ; work         ;
+;          |ProgramaRAM:inst2|               ; 3 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaRAM:inst2                                           ; work         ;
+;             |DecodificadorDeEndereco:inst| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaRAM:inst2|DecodificadorDeEndereco:inst              ; work         ;
 ;       |Tristate5bits:TriLogArit|           ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Final|Microprocessador5bits:inst|Tristate5bits:TriLogArit                                                              ; work         ;
 +--------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -505,7 +508,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:04     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -515,7 +518,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Jul  2 00:30:42 2018
+    Info: Processing started: Mon Jul  2 03:36:36 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Final -c Final
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file Final.bdf
@@ -570,6 +573,10 @@ Info (12021): Found 1 design units, including 1 entities, in source file Program
     Info (12023): Found entity 1: ProgramaFEEC
 Info (12021): Found 1 design units, including 1 entities, in source file PreparacaoProgramaFEEC.bdf
     Info (12023): Found entity 1: PreparacaoProgramaFEEC
+Info (12021): Found 1 design units, including 1 entities, in source file ProgramaRAM.bdf
+    Info (12023): Found entity 1: ProgramaRAM
+Info (12021): Found 1 design units, including 1 entities, in source file ProgramaFibonacci.bdf
+    Info (12023): Found entity 1: ProgramaFibonacci
 Info (12127): Elaborating entity "Final" for the top level hierarchy
 Info (12128): Elaborating entity "Microprocessador5bits" for hierarchy "Microprocessador5bits:inst"
 Info (12128): Elaborating entity "Display5bits" for hierarchy "Microprocessador5bits:inst|Display5bits:inst13"
@@ -596,7 +603,8 @@ Warning (275080): Converted elements in bus name "P1" using legacy naming rules.
     Warning (275081): Converted element name(s) from "P1[0]" to "P10"
 Info (12128): Elaborating entity "PreparacaoProgramaFEEC" for hierarchy "Microprocessador5bits:inst|SeletorDeProgramas:inst34|PreparacaoProgramaFEEC:inst1"
 Info (12128): Elaborating entity "ProgramaFEEC" for hierarchy "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFEEC:inst"
-Info (12128): Elaborating entity "MemoriaROM" for hierarchy "Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst3"
+Info (12128): Elaborating entity "ProgramaFibonacci" for hierarchy "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFibonacci:inst3"
+Info (12128): Elaborating entity "ProgramaRAM" for hierarchy "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaRAM:inst2"
 Info (12128): Elaborating entity "PC" for hierarchy "Microprocessador5bits:inst|PC:ProgramCounter"
 Info (12128): Elaborating entity "Contador3Bits" for hierarchy "Microprocessador5bits:inst|PC:ProgramCounter|Contador3Bits:inst1"
 Info (12128): Elaborating entity "ParadaDesvio" for hierarchy "Microprocessador5bits:inst|ParadaDesvio:BlocoParadaDesvio"
@@ -673,36 +681,36 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|Carregamento:BlocoCarregamento|Tristate5bits:inst6|inst2" to the node "Microprocessador5bits:inst|Registrador5bits:RegA|inst20" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|PreparacaoProgramaFEEC:inst1|a8" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst10" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFEEC:inst|a8" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst18" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst3|a1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst26" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst4|a1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst34" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFibonacci:inst3|a8" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst26" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaRAM:inst2|a8" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst34" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|PreparacaoProgramaFEEC:inst1|b1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst11" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFEEC:inst|b1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst19" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst3|b1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst27" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst4|b1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst35" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFibonacci:inst3|b1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst27" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaRAM:inst2|b1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst35" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|PreparacaoProgramaFEEC:inst1|c1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst12" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFEEC:inst|c1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst20" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst3|c1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst28" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst4|c1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst36" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFibonacci:inst3|c1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst28" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaRAM:inst2|c1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst36" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|PreparacaoProgramaFEEC:inst1|d8" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst5" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFEEC:inst|d1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst13" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst3|d1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst21" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst4|d1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst29" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFibonacci:inst3|d1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst21" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaRAM:inst2|d4" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst29" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|PreparacaoProgramaFEEC:inst1|e1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst6" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFEEC:inst|e8" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst14" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst3|e1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst22" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst4|e1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst30" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFibonacci:inst3|e1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst22" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaRAM:inst2|e8" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst30" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|PreparacaoProgramaFEEC:inst1|f1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst7" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFEEC:inst|f1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst15" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst3|f1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst23" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst4|f1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst31" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFibonacci:inst3|f1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst23" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaRAM:inst2|f4" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst31" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|PreparacaoProgramaFEEC:inst1|g1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst8" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFEEC:inst|g1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst16" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst3|g1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst24" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst4|g1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst32" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFibonacci:inst3|g1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst24" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaRAM:inst2|g8" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst32" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|PreparacaoProgramaFEEC:inst1|h1" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst9" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFEEC:inst|h3" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst17" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst3|h8" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst25" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|MemoriaROM:inst4|h8" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst33" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaFibonacci:inst3|h8" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst25" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|SeletorDeProgramas:inst34|ProgramaRAM:inst2|h3" to the node "Microprocessador5bits:inst|SeletorDeProgramas:inst34|inst33" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|BlocoLogArit:BlocoLogArit|Tristate5bits:inst42|inst4" to the node "Microprocessador5bits:inst|Tristate5bits:TriLogArit|inst4" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|BlocoLogArit:BlocoLogArit|Tristate5bits:inst42|inst5" to the node "Microprocessador5bits:inst|Tristate5bits:TriLogArit|inst5" into an OR gate
     Warning (13047): Converted the fan-out from the tri-state buffer "Microprocessador5bits:inst|BlocoLogArit:BlocoLogArit|Tristate5bits:inst42|inst6" to the node "Microprocessador5bits:inst|Tristate5bits:TriLogArit|inst6" into an OR gate
@@ -735,20 +743,14 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[4]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 5 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[2]"
-    Warning (15610): No output dependent on input pin "SW[1]"
-    Warning (15610): No output dependent on input pin "SW[0]"
-    Warning (15610): No output dependent on input pin "SW[3]"
-    Warning (15610): No output dependent on input pin "SW[4]"
-Info (21057): Implemented 888 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 961 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 46 output pins
-    Info (21061): Implemented 833 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 144 warnings
+    Info (21061): Implemented 906 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 138 warnings
     Info: Peak virtual memory: 358 megabytes
-    Info: Processing ended: Mon Jul  2 00:30:51 2018
+    Info: Processing ended: Mon Jul  2 03:36:45 2018
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Total CPU time (on all processors): 00:00:09
 
 
